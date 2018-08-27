@@ -1,0 +1,14 @@
+
+//背景色
+@each $colorName,$colorValue in $colorList{
+  .bg-#{$colorName}{
+    background-color:$colorValue;
+  }
+}
+
+//字体色
+@each $colorName,$colorValue in $colorList{
+  .text-#{$colorName}{
+    color:$colorValue;
+  }
+}

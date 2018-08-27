@@ -1,7 +1,7 @@
 
 <template>
     <div class="all-container">
-        <h1 class="btn">你好</h1>
+        <h3>色值系统</h3>
     </div>
 
 </template>
@@ -11,15 +11,6 @@
 
     export default {
 
-        mounted: function() {
-
-        },
-        watch: {
-
-        },
-        methods: {
-
-        }
     }
 </script>
 <style lang="scss">

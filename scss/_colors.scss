@@ -39,5 +39,16 @@ $light-gray:    $gray-400 !default;
 $gray:          $gray-600 !default;
 $dark:          $gray-800 !default;
 
-
+$colorList:(
+        'red': $red,
+        'orange': $orange,
+        'yellow': $yellow,
+        'green': $green,
+        'blue': $blue,
+        'purple': $purple,
+        'primary': $primary,
+        'white': $white,
+        'black': $black,
+        'gray': $gray
+);
 

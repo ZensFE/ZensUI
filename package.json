@@ -1,0 +1,27 @@
+{
+  "name": "zens-ui",
+  "version": "1.0.0",
+  "description": "This is a UI frame designed for ZensFE Team.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZensFE/ZensUI.git"
+  },
+  "keywords": [
+    "ui",
+    "zens",
+    "scss",
+    "css",
+    "ui",
+    "frame"
+  ],
+  "author": "Wang Chong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZensFE/ZensUI/issues"
+  },
+  "homepage": "https://github.com/ZensFE/ZensUI#readme"
+}

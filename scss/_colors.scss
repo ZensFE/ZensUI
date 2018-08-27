@@ -1,0 +1,43 @@
+/*
+*   颜色系统
+*/
+
+
+//灰度定义
+$white:    #ffffff !default;
+$gray-100: #ebebeb !default;
+$gray-400: #b3b3b3 !default;
+$gray-600: #666666 !default;
+$gray-800: #333333 !default;
+$black:    #000000 !default;
+
+
+//基础色值定义
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+$gold:    #b89267 !default;
+
+//主题色定义
+
+$primary:       $gold !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$light-gray:    $gray-400 !default;
+$gray:          $gray-600 !default;
+$dark:          $gray-800 !default;
+
+
+

@@ -39,6 +39,8 @@ $light-gray:    $gray-400 !default;
 $gray:          $gray-600 !default;
 $dark:          $gray-800 !default;
 
+
+//色值数组
 $colorList:(
         'red': $red,
         'orange': $orange,
@@ -49,6 +51,18 @@ $colorList:(
         'primary': $primary,
         'white': $white,
         'black': $black,
-        'gray': $gray
+        'gray': $gray,
+        'dark': $dark
+);
+
+/**
+  其他数值
+ */
+
+//button
+$btn-size-list:(//$height, $padding-horizontal, $font-size
+        'base':(46px,10px,18px),
+        'small':(28px,15px,14px),   //TODO  小尺寸
+        'big':(44px,15px,16px)      //TODO  大尺寸
 );
 

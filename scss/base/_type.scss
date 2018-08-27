@@ -12,3 +12,14 @@
     color:$colorValue;
   }
 }
+
+//字体大小
+/*text-Size*/
+@for $i from 26 through 38{
+  .fs-#{$i}{
+    font-size: $i/2 + px;
+  }
+  .fs-r-#{$i}{
+    font-size: $i + rpx;
+  }
+}

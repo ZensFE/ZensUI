@@ -1,6 +1,15 @@
 @function px($width){
 	@return $width / 37.5 +rem;
 }
+
+@function rpx($size) {
+  @if($is-wx) {
+    @return $size + rpx;
+  } @else {
+    //TODO 暂时只用非响应式的px单位
+    @return $size/2 + px;
+  }
+}
 @mixin size($width, $height) {
   width: $width;
   height: $height;

@@ -19,7 +19,7 @@
             <button class="btn red radius">红色按钮</button>
             <button class="btn red radius reverse">红色翻转按钮</button>
             <button class="btn small radius">小按钮</button>
-            <button class="btn big radius">大按钮</button>
+            <button class="btn big radius" :class="test">大按钮 </button>
         </div>
     </div>
 
@@ -27,9 +27,14 @@
 <script>
     import Vue from 'vue'
     import '../scss/ZensUI.scss'
-
     export default {
-
+      data(){
+        return {
+          test: '参与中'
+        }
+      },
+      mounted(){
+      }
     }
 </script>
 <style lang="scss">

@@ -52,8 +52,9 @@
 </script>
 <style lang="scss">
     @import "../scss/ZensUI";
+    /*@import "../dist/css/ZensUI.css";*/
     html {
-        background-color: $light;
+        background-color: #ebebeb;
     }
     .button-list button{
         width: 200px;

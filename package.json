@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --content-base --open --inline --hot --compress --history-api-fallback --port 8082 --config build/webpack.dev.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-compile": "node-sass ./scss/ZensUI.scss --output ./dist/css/"
   },
   "repository": {
     "type": "git",
@@ -47,7 +48,7 @@
     "colors": "^1.2.1",
     "compression-webpack-plugin": "^1.1.11",
     "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.28.0",
+    "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",

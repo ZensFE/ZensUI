@@ -66,8 +66,8 @@ $colorList:(
 
 //button
 $btn-size-list:(//$height, $padding-horizontal, $font-size
-        'base':(46px,10px,18px),
-        'small':(28px,15px,14px),   //TODO  小尺寸
-        'big':(44px,15px,16px)      //TODO  大尺寸
+        'base':(rpx(65), rpx(12), rpx(30)),
+        'small':(rpx(48), rpx(4), rpx(30)),   //TODO  小尺寸
+        'big':(rpx(92), rpx(20), rpx(36))      //TODO  大尺寸
 );
 

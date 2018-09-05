@@ -1,6 +1,7 @@
 /**
   按钮变形
  */
+@import "../lib/function";
 $btn-font-size-base: rpx(52);
 
 @mixin button-variant($color, $background, $border) {
@@ -26,9 +27,10 @@ $btn-font-size-base: rpx(52);
 @mixin button-size($height, $padding-horizontal, $font-size) {
   padding: ($height - $btn-font-size-base - 2) / 2 $padding-horizontal;
   font-size: $font-size;
-  .badge{
+
+  .badge {
     position: relative;
-    top:-2px;
+    top: -2px;
   }
 }
 
@@ -38,7 +40,8 @@ $btn-font-size-base: rpx(52);
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
-  line-height: $btn-font-size-base;
+  //line-height: $btn-font-size-base;
+  border-radius: rpx(0);
 
   @include button-variant($white, $primary, map-get($colorList,'lighter'));
   @include button-size(nth(map-get($btn-size-list,'base'),1),nth(map-get($btn-size-list,'base'),2),nth(map-get($btn-size-list,'base'),3));
@@ -50,33 +53,36 @@ $btn-font-size-base: rpx(52);
   &.pill {
     border-radius: rpx(100);
   }
-
 }
 
 //改变按钮大小
-@each $btnSizeName,$btnSizeValue in $btn-size-list{
-  @if(#{$btnSizeName}!='base'){
-    .btn.#{$btnSizeName}{
+@each $btnSizeName,$btnSizeValue in $btn-size-list {
+  @if (#{$btnSizeName}!='base') {
+    .btn.#{$btnSizeName} {
       @include button-size(nth($btnSizeValue,1),nth($btnSizeValue,2),nth($btnSizeValue,3));
     }
   }
 }
 
 //按钮颜色翻转
-@each $colorName,$colorValue in $colorList{
-  .btn.#{$colorName}{
+@each $colorName,$colorValue in $colorList {
+  .btn.#{$colorName} {
     @include button-variant(white, $colorValue, $colorValue);
-    &.btn-reverse,&.reverse{
+
+    &.btn-reverse,
+    &.reverse {
       @include button-variant(map-get($colorList,#{$colorName}), white, $colorValue);
     }
   }
 }
 
 //按钮镂空
-@each $colorName,$colorValue in $colorList{
-  .btn.#{$colorName}{
+@each $colorName,$colorValue in $colorList {
+  .btn.#{$colorName} {
     @include button-variant(white, $colorValue, $colorValue);
-    &.btn-hollow,&.hollow{
+
+    &.btn-hollow,
+    &.hollow {
       @include button-variant(map-get($colorList,#{$colorName}), transparentize($white, 1), $colorValue);
     }
   }

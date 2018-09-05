@@ -1,25 +1,22 @@
 
 //背景色
-@each $colorName,$colorValue in $colorList{
-  .bg-#{$colorName}{
-    background-color:$colorValue;
+@each $colorName,$colorValue in $colorList {
+  .bg-#{$colorName} {
+    background-color: $colorValue;
   }
 }
 
 //字体色
-@each $colorName,$colorValue in $colorList{
-  .text-#{$colorName}{
-    color:$colorValue;
+@each $colorName,$colorValue in $colorList {
+  .text-#{$colorName} {
+    color: $colorValue;
   }
 }
 
 //字体大小
-/*text-Size*/
-@for $i from 26 through 38{
-  .fs-#{$i}{
-    font-size: $i/2 + px;
-  }
-  .fs-r-#{$i}{
-    font-size: $i + rpx;
+// text-Size
+@for $i from 26 through 38 {
+  .fs-#{$i} {
+    font-size: rpx($i);
   }
 }

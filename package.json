@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --content-base --open --inline --hot --compress --history-api-fallback --port 8082 --config build/webpack.dev.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css-compile": "node-sass ./scss/ZensUI.scss --output ./dist/css/"
+    "css-compile": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.scss --output ./dist/css/",
+    "prepublish": "npm run css-compile"
   },
   "repository": {
     "type": "git",
@@ -76,6 +77,12 @@
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "style-loader": "^0.19.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^1.0.0",
+    "stylelint-scss": "^3.3.0",
     "transliteration": "^1.1.11",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",

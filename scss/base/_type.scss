@@ -1,4 +1,4 @@
-
+@import "../vars";
 //背景色
 @each $colorName,$colorValue in $colorList {
   .bg-#{$colorName} {
@@ -20,3 +20,66 @@
     font-size: rpx($i);
   }
 }
+
+//字体调整
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+.text-indent         { text-indent: 2em; }
+
+//text-Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+//text type
+.text-delete {
+  text-decoration: line-through;
+}
+
+.text-vcenter {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text-vtop {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.text-vbottom {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+// text limit
+%text-limit {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+@for $i from 1 through $layoutNumber {
+  .text-limit#{$i} {
+    @extend %text-limit;
+
+    -webkit-line-clamp: $i;
+  }
+
+  .text-fixed#{$i}{
+    height: $line-height-base * $i +em;
+    @extend %text-limit;
+
+    -webkit-line-clamp: $i;
+  }
+}
+
+// text weight
+.fw-light             { font-weight: $font-weight-light !important; }
+.fw-lighter           { font-weight: $font-weight-lighter !important; }
+.fw-normal            { font-weight: $font-weight-normal !important; }
+.fw-bold              { font-weight: $font-weight-bold !important; }
+.fw-bolder            { font-weight: $font-weight-bolder !important; }
+.font-italic          { font-style: italic !important; }

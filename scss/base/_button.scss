@@ -2,7 +2,7 @@
   按钮变形
  */
 @import "../lib/function";
-$btn-font-size-base: rpx(52);
+$btn-font-size-base: 52;
 
 @mixin button-variant($color, $background, $border) {
   color: $color;
@@ -25,8 +25,8 @@ $btn-font-size-base: rpx(52);
 }
 
 @mixin button-size($height, $padding-horizontal, $font-size) {
-  padding: ($height - $btn-font-size-base - 2) / 2 $padding-horizontal;
-  font-size: $font-size;
+  padding: rpx(($height - $font-size*1.4) / 2) rpx($padding-horizontal);
+  font-size: rpx($font-size);
 
   .badge {
     position: relative;
@@ -40,10 +40,11 @@ $btn-font-size-base: rpx(52);
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
-  //line-height: $btn-font-size-base;
   border-radius: rpx(0);
+  box-sizing: padding-box;
 
   @include button-variant($white, $primary, map-get($colorList,'lighter'));
+  //将base的尺寸设置为默认值
   @include button-size(nth(map-get($btn-size-list,'base'),1),nth(map-get($btn-size-list,'base'),2),nth(map-get($btn-size-list,'base'),3));
 
   &.radius {
@@ -83,6 +84,8 @@ $btn-font-size-base: rpx(52);
 
     &.btn-hollow,
     &.hollow {
+      border-style: solid;
+      border-width: rpx(1);
       @include button-variant(map-get($colorList,#{$colorName}), transparentize($white, 1), $colorValue);
     }
   }

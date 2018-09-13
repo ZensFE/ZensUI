@@ -7,18 +7,15 @@ $is-wx: false;    //是否为微信小程序
 *   颜色系统
 */
 
-
 //灰度定义
-$white:    #ffffff !default;
+$white:    #fff !default;
 $gray-100: #ebebeb !default;
 $gray-400: #b3b3b3 !default;
-$gray-600: #666666 !default;
-$gray-800: #333333 !default;
-$black:    #000000 !default;
-
+$gray-600: #666 !default;
+$gray-800: #333 !default;
+$black:    #000 !default;
 
 //基础色值定义
-
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -32,7 +29,6 @@ $cyan:    #17a2b8 !default;
 $gold:    #b89267 !default;
 
 //主题色定义
-
 $primary:       $gold !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
@@ -44,20 +40,19 @@ $light-gray:    $gray-400 !default;
 $gray:          $gray-600 !default;
 $dark:          $gray-800 !default;
 
-
 //色值数组
 $colorList:(
-        'red': $red,
-        'orange': $orange,
-        'yellow': $yellow,
-        'green': $green,
-        'blue': $blue,
-        'purple': $purple,
-        'primary': $primary,
-        'white': $white,
-        'black': $black,
-        'gray': $gray,
-        'dark': $dark
+      'red': $red,
+      'orange': $orange,
+      'yellow': $yellow,
+      'green': $green,
+      'blue': $blue,
+      'purple': $purple,
+      'primary': $primary,
+      'white': $white,
+      'black': $black,
+      'gray': $gray,
+      'dark': $dark
 );
 
 /**
@@ -66,8 +61,18 @@ $colorList:(
 
 //button
 $btn-size-list:(//$height, $padding-horizontal, $font-size
-        'base':(rpx(65), rpx(12), rpx(30)),
-        'small':(rpx(48), rpx(4), rpx(30)),   //TODO  小尺寸
-        'big':(rpx(92), rpx(20), rpx(36))      //TODO  大尺寸
+        'base': (65, 12, 30),
+        'small': (48, 4, 30),
+        'big': (92, 20, 36)
 );
+
+$layoutNumber:          5;
+$line-height-base:      20/14 !default;
+
+//font
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
 

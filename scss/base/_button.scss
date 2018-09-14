@@ -4,6 +4,7 @@
 @import "../lib/function";
 $btn-font-size-base: 52;
 
+
 @mixin button-variant($color, $background, $border) {
   color: $color;
   background-color: $background;
@@ -27,6 +28,8 @@ $btn-font-size-base: 52;
 @mixin button-size($height, $padding-horizontal, $font-size) {
   padding: rpx(($height - $font-size*1.4) / 2) rpx($padding-horizontal);
   font-size: rpx($font-size);
+  line-height: rpx($font-size * 1.4);
+  height: $height;
 
   .badge {
     position: relative;
@@ -41,7 +44,7 @@ $btn-font-size-base: 52;
   vertical-align: middle;
   white-space: nowrap;
   border-radius: rpx(0);
-  box-sizing: padding-box;
+  box-sizing: content-box;
 
   @include button-variant($white, $primary, map-get($colorList,'lighter'));
   //将base的尺寸设置为默认值

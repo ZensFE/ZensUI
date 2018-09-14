@@ -2,6 +2,7 @@
   @return $width / 37.5 +rem;
 }
 
+//尺寸相关的全局封装
 @function rpx($size) {
   @if ($is-wx) {
     @return $size + rpx;

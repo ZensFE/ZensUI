@@ -44,7 +44,7 @@ $btn-font-size-base: 52;
   vertical-align: middle;
   white-space: nowrap;
   border-radius: rpx(0);
-  box-sizing: content-box;
+  //box-sizing: content-box;
 
   @include button-variant($white, $primary, map-get($colorList,'lighter'));
   //将base的尺寸设置为默认值

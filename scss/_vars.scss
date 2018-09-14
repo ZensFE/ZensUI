@@ -11,6 +11,7 @@ $is-wx: false;    //是否为微信小程序
 $white:    #fff !default;
 $gray-100: #ebebeb !default;
 $gray-400: #b3b3b3 !default;
+$gray-500: #999 !default;
 $gray-600: #666 !default;
 $gray-800: #333 !default;
 $black:    #000 !default;
@@ -52,6 +53,7 @@ $colorList:(
       'white': $white,
       'black': $black,
       'gray': $gray,
+      'light': $gray-500,
       'dark': $dark
 );
 

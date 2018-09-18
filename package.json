@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --content-base --open --inline --hot --compress --history-api-fallback --port 8082 --config build/webpack.dev.config.js",
-    "test": "stylelint ./scss/ZensUI.scss",
+    "test": "stylelint -s scss ./scss/**/*.scss ./scss/*.scss",
     "css-compile": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.scss --output ./dist/css/",
     "prepublish": "npm run css-compile"
   },

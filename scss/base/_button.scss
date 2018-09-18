@@ -4,7 +4,6 @@
 @import "../lib/function";
 $btn-font-size-base: 52;
 
-
 @mixin button-variant($color, $background, $border) {
   color: $color;
   background-color: $background;

@@ -44,7 +44,8 @@ ZensUI/
     ├─ dist/                                           
     │     └── css/                      
     │         ├─ZensUI.css 
-    │         └─ZensUI.min.scss  
+    │         ├─ZensUI.min.scss
+    │         └─ZensUI.css.map    
     └─ scss/ 
        └─ZensUI.scss  
 ```

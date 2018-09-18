@@ -1,36 +1,51 @@
-# ZensUI
->本框架海量参考了[CMUI](https://github.com/tgoufe/CyanMapleDesign)的代码，向CMUI的开发者致敬
-
-这是一个为【哲品】开发的前端UI框架
-
-<p align="left">
-  <a href="https://npmcharts.com/compare/zens-ui?minimal=true"><img src="https://img.shields.io/npm/dm/zens-ui.svg" alt="Downloads"></a>
-  <a href="https://travis-ci.org/ZensFE/ZensUI"><img src="https://api.travis-ci.com/ZensFE/ZensUI.svg?branch=master" alt="Travis CI"></a>
-  <a href="https://www.npmjs.com/package/zens-ui"><img src="https://img.shields.io/npm/v/zens-ui.svg" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/zens-ui"><img src="https://img.shields.io/npm/l/zens-ui.svg" alt="License"></a>
+<p align="center">
+  <a href="https://github.com/ZensFE/ZensUI">
+    <img src="https://avatars1.githubusercontent.com/u/42375389?s=200&v=4" alt="Bootstrap logo" width=100 height=100>
+  </a>
+  <p align="center">
+    <a href="https://npmcharts.com/compare/zens-ui?minimal=true"><img src="https://img.shields.io/npm/dm/zens-ui.svg" alt="Downloads"></a>
+    <a href="https://travis-ci.com/ZensFE/ZensUI"><img src="https://api.travis-ci.com/ZensFE/ZensUI.svg?branch=master" alt="Travis CI"></a>
+    <a href="https://www.npmjs.com/package/zens-ui"><img src="https://img.shields.io/npm/v/zens-ui.svg" alt="Version"></a>
+    <a href="https://www.npmjs.com/package/zens-ui"><img src="https://img.shields.io/npm/l/zens-ui.svg" alt="License"></a>
+  </p>
 </p>
 
-### 快速上手
+## ZensUI
+>本框架海量参考了[CMUI](https://github.com/tgoufe/CyanMapleDesign)的代码，向CMUI的开发者致敬
+
+`ZensUI`为前端开发者提供了一个易上手的、语义化的、高兼容性的前端UI框架。致力于帮助开发者可以快速构建自己的web应用。同时`ZensUI`也是跨平台的，目前支持：
+ * 移动端web
+ * PC端web
+ * 微信小程序
+
+
+## 快速上手
 安装
 ```bash
 npm install --save-dev zens-ui
 ```
-引入
+
+引入scss样式
 ```javascript
-import 'zens-ui'
+import 'zens-ui/scss/ZensUI.scss'
 ```
 
 
 ## 开发脚本
+执行以下脚本，将会启动一个基于vue开发的demo页面，开发者可以在`demo/app.vue`中进行`.scss`文件的调试。
 ```bash
 npm run dev
+
 ```
 
-
-## 目录结构
+## npm包中的目录结构
 ```
-├── scss                      //样式源代码                     
-├── build                     //构建用配置文件
-└── demo                      //示例代码
+ZensUI/
+    ├─ dist/                                           
+    │     └── css/                      
+    │         ├─ZensUI.css 
+    │         └─ZensUI.min.scss  
+    └─ scss/ 
+       └─ZensUI.scss  
 ```
 

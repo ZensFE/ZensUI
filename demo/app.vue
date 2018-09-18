@@ -33,7 +33,12 @@
     </div>
 
 
-    <h4></h4>
+    <h4>Box Model</h4>
+    <div class="test-container">
+      <div class="padding10" style="width: 200px; height: 200px;">
+    </div>
+
+    </div>
   </div>
 
 </template>
@@ -60,4 +65,9 @@
         width: 200px;
         margin: 5px 0;
     }
+  .test-container {
+    div {
+      border: 1px solid gray;
+    }
+  }
 </style>

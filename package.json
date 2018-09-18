@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "webpack-dev-server --content-base --open --inline --hot --compress --history-api-fallback --port 8082 --config build/webpack.dev.config.js",
     "test": "stylelint -s scss ./scss/**/*.scss ./scss/*.scss",
-    "css-compile": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.scss --output ./dist/css/",
-    "prepublish": "npm run css-compile"
+    "scss-compile": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.scss --output ./dist/css/",
+    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.min.css dist/css/ZensUI.css",
+    "prepublish": "npm run build",
+    "build": "npm run scss-compile && npm run css-minify"
   },
   "repository": {
     "type": "git",
@@ -46,6 +48,7 @@
     "chalk": "^2.0.1",
     "cheerio": "^1.0.0-rc.2",
     "child_process": "^1.0.2",
+    "clean-css-cli": "^4.2.1",
     "colors": "^1.2.1",
     "compression-webpack-plugin": "^1.1.11",
     "copy-webpack-plugin": "^4.0.1",

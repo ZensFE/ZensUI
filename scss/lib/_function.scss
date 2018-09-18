@@ -93,9 +93,12 @@
   }
 }
 
-@function getLayoutSize($i,$reverse:1) {
+@function get-layout-size($i,$reverse:1) {
   @if ($isPC) {
     @return $i * $reverse * 10 +px;
+  }
+  @else if($is-wx) {
+    @return rpx($i * 10);
   }
   @else {
     @return $i * $reverse / 7.5 +rem;

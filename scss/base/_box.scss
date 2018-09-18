@@ -1,0 +1,46 @@
+/* Box model */
+@import "../lib/function";
+@for $i from 0 through $layoutNumber{
+  .margin#{$i * 10}{ margin: get-layout-size($i, 1); }
+  .margint#{$i * 10}{ margin-top: get-layout-size($i, 1); }
+  .marginb#{$i * 10}{ margin-bottom: get-layout-size($i, 1); }
+  .marginl#{$i * 10}{ margin-left: get-layout-size($i, 1); }
+  .marginr#{$i * 10}{ margin-right: get-layout-size($i, 1); }
+  .margint-n#{$i * 10}{ margin-top: get-layout-size($i, -1); }
+  .marginb-n#{$i * 10}{ margin-bottom: get-layout-size($i, -1); }
+  .marginl-n#{$i * 10}{ margin-left: get-layout-size($i, -1); }
+  .marginr-n#{$i * 10}{ margin-right: get-layout-size($i, -1); }
+
+  .marginh#{$i * 10}{
+    @extend .marginl#{$i * 10};
+    @extend .marginr#{$i * 10};
+  }
+
+  .marginv#{$i * 10}{
+    @extend .margint#{$i * 10};
+    @extend .marginb#{$i * 10};
+  }
+  .padding#{$i * 10}{ padding: get-layout-size($i, 1); }
+  .paddingt#{$i * 10}{ padding-top: get-layout-size($i, 1); }
+  .paddingb#{$i * 10}{ padding-bottom: get-layout-size($i, 1); }
+  .paddingl#{$i * 10}{ padding-left: get-layout-size($i, 1); }
+  .paddingr#{$i * 10}{ padding-right: get-layout-size($i, 1); }
+
+  .paddingh#{$i * 10}{
+    @extend .paddingl#{$i * 10};
+    @extend .paddingr#{$i * 10};
+  }
+
+  .paddingv#{$i * 10}{
+    @extend .paddingt#{$i * 10};
+    @extend .paddingb#{$i * 10};
+  }
+  %top#{$i * 10}{ top: get-layout-size($i, 1); }
+  %right#{$i * 10}{ right: get-layout-size($i, 1); }
+  %left#{$i * 10}{ left: get-layout-size($i, 1); }
+  %bottom#{$i * 10}{ bottom: #{ get-layout-size($i, 1)}; }
+  %top-n#{$i * 10}{ top: get-layout-size($i, -1); }
+  %right-n#{$i * 10}{ right: get-layout-size($i, -1); }
+  %left-n#{$i * 10}{ left: get-layout-size($i, -1); }
+  %bottom-n#{$i * 10}{ bottom: get-layout-size($i, -1); }
+}

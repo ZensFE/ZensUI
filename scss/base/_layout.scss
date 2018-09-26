@@ -1,0 +1,320 @@
+/**
+  Layout 布局
+ */
+@import "../lib/function";
+
+/**
+  位置调整
+ */
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.pos-a {
+  position: absolute;
+}
+
+.pos-f {
+  position: fixed;
+}
+
+.vcenter {
+  top: 50%;
+  @include translateY(-50%);
+  @extend .pos-a;
+}
+
+.hcenter {
+  left: 50%;
+  @include translateX(-50%);
+  @extend .pos-a;
+}
+
+.fullcenter {
+  top: 50%;
+  left: 50%;
+  @include translate(-50%, -50%);
+  @extend .pos-a;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.abs-bottom,
+.abs-top,
+.abs-full,
+.abs-left,
+.abs-right {
+  @extend .pos-a;
+}
+
+.fixed-bottom,
+.fixed-top,
+.fixed-full,
+.fixed-left,
+.fixed-right,
+.fixed-center {
+  @extend .pos-f;
+}
+
+.abs-bottom,
+.fixed-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.abs-top,
+.fixed-top {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.abs-full,
+.fixed-full,
+.fixed-center {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.fixed-center {
+  margin: auto;
+}
+
+.abs-left,
+.fixed-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.abs-right,
+.fixed-right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.overflow-h {
+  overflow: hidden;
+}
+
+.overflow-xh {
+  overflow-x: hidden;
+}
+
+.overflow-yh {
+  overflow-x: hidden;
+}
+
+.overflow-i {
+  overflow: initial;
+}
+
+.dis-b {
+  display: block;
+}
+
+.dis-i {
+  display: inline-block;
+}
+
+.dis-n {
+  display: none;
+}
+
+/**
+  Flex布局
+ */
+.flex-container {
+  @include display-flex();
+  @include align-items();
+  @include justify-content();
+
+  &.round {
+    @include justify-content(space-around);
+  }
+
+  &.center {
+    @include justify-content(center);
+  }
+
+  &.left {
+    @include justify-content(flex-start);
+  }
+
+  &.right {
+    @include justify-content(flex-end);
+  }
+
+  &.top {
+    @include align-items(flex-start);
+  }
+
+  &.line {
+    @include align-items(baseline);
+  }
+
+  &.bottom {
+    @include align-items(flex-end);
+  }
+
+  &.vfull {
+    @include align-items(stretch);
+  }
+
+  &.hfull {
+    & > * {
+      @include flex();
+    }
+  }
+
+  &.leftCenter {
+    @include justify-content(flex-start);
+  }
+
+  &.leftTop {
+    @include justify-content(flex-start);
+    @include align-items(flex-start);
+  }
+
+  &.leftBottom {
+    @include justify-content(flex-start);
+    @include align-items(flex-end);
+  }
+
+  &.leftLine {
+    @include justify-content(flex-start);
+    @include align-items(baseline);
+  }
+
+  &.rightCenter {
+    @include justify-content(flex-end);
+  }
+
+  &.rightTop {
+    @include justify-content(flex-end);
+    @include align-items(flex-start);
+  }
+
+  &.rightBottom {
+    @include justify-content(flex-end);
+    @include align-items(flex-end);
+  }
+
+  &.rightLine {
+    @include justify-content(flex-end);
+    @include align-items(baseline);
+  }
+
+  &.topRound {
+    @include justify-content(space-around);
+    @include align-items(flex-start);
+  }
+
+  &.bottomRound {
+    @include justify-content(space-around);
+    @include align-items(flex-end);
+  }
+}
+
+.flex-container-col {
+  @extend .flex-container;
+  @include flex-direction();
+
+  &.round {
+    @include justify-content(space-around);
+  }
+
+  &.center {
+    @include justify-content(center);
+  }
+
+  &.left {
+    @include align-items(flex-start);
+  }
+
+  &.right {
+    @include align-items(flex-end);
+  }
+
+  &.top {
+    @include justify-content(flex-start);
+  }
+
+  &.bottom {
+    @include justify-content(flex-end);
+  }
+
+  &.vfull {
+    & > * {
+      @include flex();
+    }
+  }
+
+  &.hfull {
+    @include align-items(stretch);
+  }
+
+  &.leftCenter {
+    @include align-items(flex-start);
+    @include justify-content(center);
+  }
+
+  &.leftTop {
+    @include align-items(flex-start);
+    @include justify-content(flex-start);
+  }
+
+  &.leftBottom {
+    @include align-items(flex-start);
+    @include justify-content(flex-end);
+  }
+
+  &.rightCenter {
+    @include align-items(flex-end);
+    @include justify-content(center);
+  }
+
+  &.rightTop {
+    @include align-items(flex-end);
+    @include justify-content(flex-start);
+  }
+
+  &.rightBottom {
+    @include align-items(flex-end);
+    @include justify-content(flex-end);
+  }
+
+  & > span {
+    display: block;
+  }
+}
+
+@for $i from 1 through $layoutNumber {
+  .flex-grow#{$i} {
+    flex-grow: $i;
+  }
+
+  .flex#{$i} {
+    flex: $i;
+  }
+}
+
+@for $i from 0 through 20 {
+  .flex-basis#{$i * 5} {
+    flex-basis: ($i * 5) * 1%;
+  }
+}

@@ -6,6 +6,8 @@
   "rules": {
     "at-rule-empty-line-before": null,
     "block-opening-brace-space-before": null,
-    "number-leading-zero": "never"
+    "number-leading-zero": "never",
+    "selector-list-comma-newline-after": "always",
+    "selector-list-comma-newline-before": "never-multi-line"
   }
 }

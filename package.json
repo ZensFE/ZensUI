@@ -21,7 +21,8 @@
     "scss",
     "css",
     "ui",
-    "frame"
+    "frame",
+    "ui-kit"
   ],
   "author": "Wang Chong",
   "license": "MIT",

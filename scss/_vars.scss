@@ -44,18 +44,31 @@ $dark:          $gray-800 !default;
 
 //色值数组
 $colorList: (
-  'red': $red,
-  'orange': $orange,
-  'yellow': $yellow,
-  'green': $green,
-  'blue': $blue,
-  'purple': $purple,
-  'primary': $primary,
-  'white': $white,
-  'black': $black,
-  'gray': $gray,
-  'light': $gray-500,
-  'dark': $dark
+  'red':        $red,
+  'orange':     $orange,
+  'yellow':     $yellow,
+  'green':      $green,
+  'blue':       $blue,
+  'purple':     $purple,
+  'primary':    $primary,
+  'white':      $white,
+  'black':      $black,
+  'gray':       $gray,
+  'light':      $gray-500,
+  'dark':       $dark
+);
+
+/**
+  灰度列表
+ */
+$grayList:(
+  'black':      $black,
+  'darker':     $gray-800,
+  'dark':       $gray-600,
+  'gray':       $gray-500,
+  'light':      $gray-400,
+  'lighter':    $gray-100,
+  'white':      $white
 );
 
 /**
@@ -73,6 +86,12 @@ $btn-size-list:(
 
 $layoutNumber:          5;
 $line-height-base:      20/14 !default;
+
+$container_padding: rpx(20);
+//TODO 该值有待商榷
+$container_width: rpx(750);
+$border-radius-base:        rpx(8) !default;
+$border-color-default:      #eee !default;
 
 //font
 $font-weight-lighter:         lighter !default;

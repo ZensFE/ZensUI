@@ -1,5 +1,10 @@
 /* Box model */
 @import "../lib/function";
+@import "../vars";
+
+/**
+  外边距、内边距
+ */
 @for $i from 0 through $layoutNumber{
   .margin#{$i * 10}{ margin: get-layout-size($i, 1); }
   .margint#{$i * 10}{ margin-top: get-layout-size($i, 1); }
@@ -43,4 +48,103 @@
   %right-n#{$i * 10}{ right: get-layout-size($i, -1); }
   %left-n#{$i * 10}{ left: get-layout-size($i, -1); }
   %bottom-n#{$i * 10}{ bottom: get-layout-size($i, -1); }
+}
+
+.border {
+  border: 1px solid $border-color-default;
+
+  &l {
+    border-left: 1px solid $border-color-default;
+  }
+
+  &r {
+    border-right: 1px solid $border-color-default;
+  }
+
+  &t {
+    border-top: 1px solid $border-color-default;
+  }
+
+  &b {
+    border-bottom: 1px solid $border-color-default;
+  }
+
+  &h {
+    border-left: 1px solid $border-color-default;
+    border-right: 1px solid $border-color-default;
+  }
+
+  &v {
+    border-top: 1px solid $border-color-default;
+    border-bottom: 1px solid $border-color-default;
+  }
+
+  &.item {
+    > * {
+      border: 1px solid $border-color-default;
+    }
+  }
+
+  &.itemv,
+  &.itemh {
+    > * {
+      border-top: 1px solid $border-color-default;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+
+  &.round {
+    border-radius: 50%;
+  }
+
+  &.radius {
+    border-radius: $border-radius-base;
+  }
+}
+
+@if (not $isPC) {
+  .bordert.light,
+  .borderr.light,
+  .borderb.light,
+  .borderl.light {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: map-get($grayList, 'lighter');
+    }
+  }
+
+  .bordert.light::before {
+    bottom: auto;
+    height: 1px;
+    transform: scaleY(.5);
+  }
+
+  .borderr.light::before {
+    left: auto;
+    width: 1px;
+    transform: scaleX(.5);
+  }
+
+  .borderb.light::before {
+    top: auto;
+    height: 1px;
+    transform: scaleY(.5);
+  }
+
+  .borderl.light::before {
+    right: auto;
+    width: 1px;
+    transform: scaleX(.5);
+  }
 }

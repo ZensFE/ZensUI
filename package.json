@@ -1,6 +1,6 @@
 {
   "name": "zens-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a UI frame designed for ZensFE Team.",
   "main": "index.js",
   "scripts": {

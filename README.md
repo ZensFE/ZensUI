@@ -39,13 +39,19 @@ npm run dev
 ```
 
 ## npm包中的目录结构
+其中`ZensUI.css`用于通用的web开发，而`ZensUI.mp.css`用于微信小程序的开发
 ```
 ZensUI/
     ├─ dist/                                           
     │     └── css/                      
     │         ├─ZensUI.css 
-    │         ├─ZensUI.min.scss
-    │         └─ZensUI.css.map    
+    │         ├─ZensUI.css.map
+    │         ├─ZensUI.min.css
+    │         ├─ZensUI.min.css.map 
+    │         ├─ZensUI.mp.css
+    │         ├─ZensUI.mp.css.map
+    │         ├─ZensUI.mp.min.css
+    │         └─ZensUI.mp.min.css.map    
     └─ scss/ 
        └─ZensUI.scss  
 ```

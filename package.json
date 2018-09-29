@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "webpack-dev-server --content-base --open --inline --hot --compress --history-api-fallback --port 8082 --config build/webpack.dev.config.js",
     "test": "stylelint -s scss ./scss/**/*.scss ./scss/*.scss",
-    "scss-compile": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.scss --output ./dist/css/",
-    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.min.css dist/css/ZensUI.css",
+    "scss-compile-origin": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.scss --output ./dist/css/",
+    "scss-compile-mp": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.mp.scss --output ./dist/css/",
+    "scss-compile": "npm run scss-compile-origin && npm run scss-compile-mp",
+    "css-minify-origin": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.min.css dist/css/ZensUI.css",
+    "css-minify-mp": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.mp.min.css dist/css/ZensUI.mp.css",
+    "css-minify": "npm run css-minify-origin && npm run css-minify-mp",
     "prepublish": "npm run build",
     "build": "npm run scss-compile && npm run css-minify"
   },

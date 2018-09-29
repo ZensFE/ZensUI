@@ -28,7 +28,7 @@ $btn-font-size-base: 52;
   padding: rpx(($height - $font-size*1.4) / 2) rpx($padding-horizontal);
   font-size: rpx($font-size);
   line-height: rpx($font-size * 1.4);
-  height: $height;
+  height: rpx($height);
 
   .badge {
     position: relative;

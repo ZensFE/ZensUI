@@ -56,3 +56,5 @@ ZensUI/
        └─ZensUI.scss  
 ```
 
+## License
+Everything is [MIT](https://en.wikipedia.org/wiki/MIT_License)

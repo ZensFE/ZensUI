@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://github.com/ZensFE/ZensUI">
     <img src="http://cdn.zens.asia/cms/img/1537356182e28014bc.png" alt="Bootstrap logo" width=200 height=200>
@@ -11,30 +10,28 @@
   </p>
 </p>
 
-[[中文版介绍](/README.chs.md)]
+## ZensUI
+>本框架海量参考了[CMUI](https://github.com/tgoufe/CyanMapleDesign)的代码，向CMUI的开发者致敬
 
-## What is ZensUI
->This UI frame is inspired by [CMUI](https://github.com/tgoufe/CyanMapleDesign).
-
-`Zens UI`provides a handy, semantic, and highly compatible UI framework. Committed to helping developers build their web apps quickly. At the same time `ZensUI` is also cross-platform
- * mobile web
- * PC web
- * [Weixin Mini Program](https://mp.weixin.qq.com/cgi-bin/wx)
+`ZensUI`为前端开发者提供了一个易上手的、语义化的、高兼容性的前端UI框架。致力于帮助开发者可以快速构建自己的web应用。同时`ZensUI`也是跨平台的，目前支持：
+ * 移动端web
+ * PC端web
+ * 微信小程序
 
 
-## Quick Start
-Install
+## 快速上手
+安装
 ```bash
 npm install --save-dev zens-ui
 ```
 
-import css file
-```scss
-@import '~zens-ui/scss/ZensUI.scss'
+引入scss样式
+```javascript
+import 'zens-ui/scss/ZensUI.scss'
 ```
 
-## npm package content
-In npm package, `ZensUI.css` is designed for common web developers, and `ZensUI.mp.css` is designed for weixin mini program developers 
+## npm包中的目录结构
+其中`ZensUI.css`用于通用的web开发，而`ZensUI.mp.css`用于微信小程序的开发
 ```
 ZensUI/
     ├─ dist/                                           

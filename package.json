@@ -28,7 +28,12 @@
     "frame",
     "ui-kit"
   ],
-  "author": "Wang Chong",
+  "authors": [
+    {
+      "name": "Wang Chong",
+      "email": "royneedyou@aliyun.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ZensFE/ZensUI/issues"

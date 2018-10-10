@@ -1,9 +1,12 @@
 {
   "name": "zens-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This is a UI frame designed for ZensFE Team.",
   "main": "index.js",
-  "files": ["/scss", "/dist"],
+  "files": [
+    "/scss",
+    "/dist"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --content-base --open --inline --hot --compress --history-api-fallback --port 8082 --config build/webpack.dev.config.js",
     "test": "stylelint -s scss ./scss/**/*.scss ./scss/*.scss",

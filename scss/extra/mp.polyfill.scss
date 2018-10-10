@@ -4,3 +4,8 @@
 
 //is-wx set true globally
 $is-wx: true;
+
+//去除小程序中<button>的默认边框
+button::after {
+  border: none;
+}

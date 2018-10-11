@@ -86,7 +86,9 @@ As you see, `.btn` described what element it will be, `.red` and `.radius` are m
 </div>
 ```
 It will be rendered like below:
-<img src="http://cdn.zens.asia/cms/img/1539248296095ca1c6.png" alt="">
+<div>
+    <img src="http://cdn.zens.asia/cms/img/1539248296095ca1c6.png" alt="">
+</div>
 
 
 ## npm package content

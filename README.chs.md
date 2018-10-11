@@ -50,7 +50,9 @@ import 'zens-ui/scss/ZensUI.scss'
 就像你看到一样，其中`.btn`是来描述当前是一个什么元素，而`.red`和`.radius`作为"修饰符"，来描述当前元素长什么样子。
 
 更多的按钮用法：
-<img src="http://cdn.zens.asia/cms/img/153924951268d8a270.png" alt="">
+<div>
+    <img src="http://cdn.zens.asia/cms/img/153924951268d8a270.png" alt="">
+</div>
 
 ```html
   <button class="btn">

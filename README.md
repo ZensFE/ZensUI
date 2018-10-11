@@ -13,10 +13,12 @@
 
 [[中文版介绍](/README.chs.md)]
 
-## What is ZensUI
+## What is Zens UI
 >This UI frame is inspired by [CMUI](https://github.com/tgoufe/CyanMapleDesign).
 
-`Zens UI`provides a handy, semantic, and highly compatible UI framework. Committed to helping developers build their web apps quickly. At the same time `ZensUI` is also cross-platform
+`Zens UI` provides a handy, semantic, and highly compatible UI framework. Committed to helping developers build their web apps quickly. At the same time `ZensUI` is also cross-platform
+
+platforms supported:
  * mobile web
  * PC web
  * [Weixin Mini Program](https://mp.weixin.qq.com/cgi-bin/wx)
@@ -32,6 +34,16 @@ import css file
 ```scss
 @import '~zens-ui/scss/ZensUI.scss'
 ```
+
+## Usage
+If you need a red rounded button in document, you just need write css style code like below
+```html
+<button class="btn red radius">my button</button>
+```
+  <div>
+    <link rel="stylesheet" href="https://unpkg.com/zens-ui/dist/css/ZensUI.min.css">
+    <button class="btn red radius">my button</button>
+  </div>
 
 ## npm package content
 In npm package, `ZensUI.css` is designed for common web developers, and `ZensUI.mp.css` is designed for weixin mini program developers 

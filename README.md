@@ -56,18 +56,10 @@ As you see, `.btn` described what element it will be, `.red` and `.radius` are m
 </div>
 
 ```html
-  <button class="btn">
-    Basic button
-  </button>
-  <button class="btn gray pill">
-    Gray pills like button
-  </button>
-  <button class="btn big hollow red radius">
-    Big hollow round button
-  </button>
-  <button class="btn black small">
-    Small black button
-  </button>
+  <button class="btn">Basic button</button>
+  <button class="btn gray pill">Gray pills like button</button>
+  <button class="btn big hollow red radius">Big hollow round button</button>
+  <button class="btn black small">Small black button</button>
 ```
 
 ### Further Example

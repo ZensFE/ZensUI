@@ -44,12 +44,16 @@ If you need a red rounded button in document, you just need write css style code
 <button class="btn red radius">my button</button>
 ```
 It will be rendered like below:
-<img src="http://cdn.zens.asia/cms/img/153924359633b20949.png" alt="">
+<div>
+    <img src="http://cdn.zens.asia/cms/img/153924359633b20949.png" alt="">
+</div>
 
 As you see, `.btn` described what element it will be, `.red` and `.radius` are modifiers, they described what this element will look like.
 
-**More button's usages**： 
-<img src="http://cdn.zens.asia/cms/img/153924951268d8a270.png" alt="">
+**More button's usages**：
+<div>
+    <img src="http://cdn.zens.asia/cms/img/153924951268d8a270.png" alt="">
+</div>
 
 ```html
   <button class="btn">

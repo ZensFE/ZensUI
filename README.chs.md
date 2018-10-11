@@ -43,7 +43,9 @@ import 'zens-ui/scss/ZensUI.scss'
 <button class="btn red radius">my button</button>
 ```
 它会被渲染成下面的样子：
-<img src="http://cdn.zens.asia/cms/img/153924359633b20949.png" alt="">
+<div>
+    <img src="http://cdn.zens.asia/cms/img/153924359633b20949.png" alt="">
+</div>
 
 就像你看到一样，其中`.btn`是来描述当前是一个什么元素，而`.red`和`.radius`作为"修饰符"，来描述当前元素长什么样子。
 
@@ -78,7 +80,9 @@ import 'zens-ui/scss/ZensUI.scss'
  </div>
  ```
 它会被渲染成下面的样子：
-<img src="http://cdn.zens.asia/cms/img/1539248296095ca1c6.png" alt="">
+<div>
+    <img src="http://cdn.zens.asia/cms/img/1539248296095ca1c6.png" alt="">
+</div>
 
 ## npm包中的目录结构
 其中`ZensUI.css`用于通用的web开发，而`ZensUI.mp.css`用于微信小程序的开发

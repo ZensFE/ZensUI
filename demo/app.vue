@@ -39,7 +39,26 @@
     </div>
 
     </div>
+    <div style="min-height: 50px;"></div>
+    <div class="img-container round" style="width: 100px; height: 100px;">
+      <img src="https://via.placeholder.com/100x100" alt="">
+    </div>
+
+  <button class="btn">
+    Basic button
+  </button>
+  <button class="btn gray pill">
+    Gray pills like button
+  </button>
+  <button class="btn big hollow red radius">
+    Big hollow round button
+  </button>
+  <button class="btn black small">
+    Small black button
+  </button>
   </div>
+
+
 
 </template>
 <script>
@@ -59,7 +78,11 @@
   @import "../scss/ZensUI";
 
   html {
-    background-color: #ebebeb;
+    background-color: #fff;
+  }
+
+  .all-container {
+    padding: 50px;
   }
 
   .button-list button {

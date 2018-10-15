@@ -177,8 +177,10 @@
   }
 
   &.hfull {
-    & > * {
-      @include flex();
+    & > {
+      @include uni-selector() {
+        @include flex();
+      }
     }
   }
 
@@ -260,8 +262,10 @@
   }
 
   &.vfull {
-    & > * {
-      @include flex();
+    & > {
+      @include uni-selector() {
+        @include flex();
+      }
     }
   }
 

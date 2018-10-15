@@ -340,3 +340,20 @@
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+
+@mixin uni-selector() {
+  $is-wx: false !default;
+  $weixin-elements: (view, swiper, icon, text, rich-text, progress, button, checkbox, form, input,
+  label, picker, picker-view, radio, slider, switch, textarea, navigator, functional-page-navigator,
+  audio, image, video, camera, live-player, live-pusher, map, canvas);
+  @if($is-wx) {
+    #{$weixin-elements} {
+      @content;
+    }
+  }
+  @else {
+    * {
+      @content;
+    }
+  }
+}

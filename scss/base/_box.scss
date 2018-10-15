@@ -80,18 +80,22 @@
   }
 
   &.item {
-    > * {
-      border: 1px solid $border-color-default;
+    > {
+      @include uni-selector() {
+        border: 1px solid $border-color-default;
+      }
     }
   }
 
   &.itemv,
   &.itemh {
-    > * {
-      border-top: 1px solid $border-color-default;
+    > {
+      @include uni-selector() {
+        border-top: 1px solid $border-color-default;
 
-      &:first-child {
-        border-top: none;
+        &:first-child {
+          border-top: none;
+        }
       }
     }
   }

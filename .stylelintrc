@@ -8,6 +8,7 @@
     "block-opening-brace-space-before": null,
     "number-leading-zero": "never",
     "selector-list-comma-newline-after": "always",
-    "selector-list-comma-newline-before": "never-multi-line"
+    "selector-list-comma-newline-before": "never-multi-line",
+    "no-descending-specificity": null
   }
 }

@@ -15,7 +15,7 @@
 
 //字体大小
 // text-Size
-@for $i from 26 through 38 {
+@for $i from 24 through 40 {
   .fs-#{$i} {
     font-size: rpx($i);
   }

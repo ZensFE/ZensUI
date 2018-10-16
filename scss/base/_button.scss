@@ -93,3 +93,22 @@ $btn-font-size-base: 52;
   }
 }
 
+//按钮组
+.btn-group {
+  position: relative;
+  display: inline-flex;
+
+  //强制去除中间按钮的圆角（右侧）
+  > .btn:not(:last-child):not(.dropdown-toggle),
+  > .btn-group:not(:last-child) > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  //强制去除中间按钮的圆角（左侧）
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

@@ -42,20 +42,24 @@ $light-gray:    $gray-400 !default;
 $gray:          $gray-600 !default;
 $dark:          $gray-800 !default;
 
-//色值数组
-$colorList: (
-  'red':        $red,
-  'orange':     $orange,
-  'yellow':     $yellow,
-  'green':      $green,
-  'blue':       $blue,
-  'purple':     $purple,
-  'primary':    $primary,
-  'white':      $white,
-  'black':      $black,
-  'gray':       $gray,
-  'light':      $gray-500,
-  'dark':       $dark
+$colorList: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colorList: map-merge(
+  (
+    'red': $red,
+    'orange': $orange,
+    'yellow': $yellow,
+    'green': $green,
+    'blue': $blue,
+    'purple': $purple,
+    'primary': $primary,
+    'white': $white,
+    'black': $black,
+    'gray': $gray,
+    'light': $gray-500,
+    'dark': $dark
+  ),
+  $colorList
 );
 
 /**
@@ -74,17 +78,20 @@ $grayList:(
 /**
   其他数值
  */
-
 //button
-
-$btn-size-list:(
-  // $height, $padding-horizontal, $font-size
-  'base': (65, 30, 30),
-  'small': (48, 25, 30),
-  'big': (92, 40, 36)
+$btn-size-list: () !default;
+//parameters： $height, $padding-horizontal, $font-size
+// stylelint-disable function-comma-newline-after
+$btn-size-list: map-merge(
+  (
+    'base': (65, 30, 30),
+    'small': (48, 25, 30),
+    'big': (88, 30, 32)
+  ),
+  $btn-size-list
 );
 
-$layoutNumber:          5;
+$layoutNumber:          5 !default;
 $line-height-base:      20/14 !default;
 
 $container_padding: rpx(20);

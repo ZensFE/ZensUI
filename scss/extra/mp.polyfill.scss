@@ -6,6 +6,17 @@
 $is-wx: true;
 
 //去除小程序中<button>的默认边框
+
+button.button-box {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  border-radius: 0;
+  line-height: 1em;
+  background-color: transparent;
+}
+
 button::after {
   border: none;
   border-radius: none;

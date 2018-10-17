@@ -85,7 +85,7 @@ $btn-size-list: () !default;
 $btn-size-list: map-merge(
   (
     'base': (65, 30, 30),
-    'small': (48, 25, 30),
+    'small': (55, 20, 26),
     'big': (88, 30, 32)
   ),
   $btn-size-list

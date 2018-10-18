@@ -5,8 +5,7 @@
 //is-wx set true globally
 $is-wx: true;
 
-//去除小程序中<button>的默认边框
-
+// 当利用小程序的button组件做功能容器时，样式问题的修复
 button.button-box {
   display: inline-block;
   margin: 0;
@@ -17,6 +16,7 @@ button.button-box {
   background-color: transparent;
 }
 
+// 去除小程序中<button>的默认边框
 button::after {
   border: none;
   border-radius: none;

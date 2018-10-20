@@ -21,3 +21,17 @@ button::after {
   border: none;
   border-radius: none;
 }
+
+// 全屏按钮 为了做的formID收集
+button.btn-full-screen {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: initial;
+  line-height: initial;
+
+  &.button-hover {
+    background: none;
+    color: initial;
+  }
+}

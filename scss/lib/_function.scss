@@ -98,7 +98,7 @@
     @return $i * $reverse * 10 +px;
   }
   @else if($is-wx) {
-    @return rpx($i * 10);
+    @return rpx($i * $reverse * 10);
   }
   @else {
     @return $i * $reverse / 7.5 +rem;

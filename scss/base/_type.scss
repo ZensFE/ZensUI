@@ -1,13 +1,13 @@
 @import "../vars";
 //背景色
-@each $colorName,$colorValue in $colorList {
+@each $colorName,$colorValue in $color-list {
   .bg-#{$colorName} {
     background-color: $colorValue;
   }
 }
 
 //字体色
-@each $colorName,$colorValue in $colorList {
+@each $colorName,$colorValue in $color-list {
   .text-#{$colorName} {
     color: $colorValue;
   }
@@ -15,7 +15,7 @@
 
 //字体大小
 // text-Size
-@for $i from 24 through 40 {
+@for $i from $font-size-min through $font-size-max {
   .fs-#{$i} {
     font-size: rpx($i);
   }
@@ -61,7 +61,7 @@
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 }
-@for $i from 1 through $layoutNumber {
+@for $i from 1 through $layout-number {
   .text-limit#{$i} {
     @extend %text-limit;
 

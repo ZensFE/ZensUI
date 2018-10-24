@@ -60,7 +60,7 @@ $btn-font-size-base: 52;
   border-radius: rpx(0);
   //box-sizing: content-box;
 
-  @include button-variant($white, $primary, map-get($colorList,'lighter'));
+  @include button-variant($white, $primary, map-get($color-list,'lighter'));
   //将base的尺寸设置为默认值
   @include button-size(nth(map-get($btn-size-list,'base'),1),nth(map-get($btn-size-list,'base'),2),nth(map-get($btn-size-list,'base'),3));
 
@@ -83,19 +83,19 @@ $btn-font-size-base: 52;
 }
 
 //按钮颜色翻转
-@each $colorName,$colorValue in $colorList {
+@each $colorName,$colorValue in $color-list {
   .btn.#{$colorName} {
     @include button-variant(white, $colorValue, $colorValue);
 
     &.btn-reverse,
     &.reverse {
-      @include button-variant(map-get($colorList,#{$colorName}), white, $colorValue);
+      @include button-variant(map-get($color-list,#{$colorName}), white, $colorValue);
     }
   }
 }
 
 //按钮镂空
-@each $colorName,$colorValue in $colorList {
+@each $colorName,$colorValue in $color-list {
   .btn.#{$colorName} {
     @include button-variant(white, $colorValue, $colorValue);
 
@@ -103,7 +103,7 @@ $btn-font-size-base: 52;
     &.hollow {
       border-style: solid;
       border-width: rpx(1);
-      @include button-variant(map-get($colorList,#{$colorName}), transparentize($white, 1), $colorValue);
+      @include button-variant(map-get($color-list,#{$colorName}), transparentize($white, 1), $colorValue);
     }
   }
 }

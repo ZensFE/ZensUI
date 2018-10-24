@@ -308,7 +308,7 @@
   }
 }
 
-@for $i from 1 through $layoutNumber {
+@for $i from 1 through $layout-number {
   .flex-grow#{$i} {
     flex-grow: $i;
   }
@@ -339,13 +339,13 @@
 }
 
 %grid_space{
-  padding-right: $container_padding;
-  padding-left: $container_padding;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
 }
 
 %grid_space_mini{
-  padding-right: $container_padding / 2;
-  padding-left: $container_padding / 2;
+  padding-right: $container-padding / 2;
+  padding-left: $container-padding / 2;
 }
 
 %grid_space_box{
@@ -357,7 +357,7 @@
   @extend %container;
   @extend %grid_space;
 
-  max-width: $container_width;
+  max-width: $container-width;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -366,12 +366,12 @@
 .row{
   @extend %container;
 
-  margin-left: -#{$container_padding};
-  margin-right: -#{$container_padding};
+  margin-left: -#{$container-padding};
+  margin-right: -#{$container-padding};
 
   &.mini{
-    margin-left: $container_padding/ 2;
-    margin-right: $container_padding/ 2;
+    margin-left: $container-padding/ 2;
+    margin-right: $container-padding/ 2;
   }
 }
 
@@ -458,7 +458,7 @@
   }
 
   &.round{
-    border-radius: $container_width;
+    border-radius: $container-width;
   }
 
   &.border{

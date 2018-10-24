@@ -2,7 +2,7 @@
   基础变量
  */
 $is-wx: false !default;    //是否为微信小程序
-$isPC: false !default;     //是否为PC端
+$is-pc: false !default;     //是否为PC端
 
 /*
 *   颜色系统
@@ -42,9 +42,9 @@ $light-gray:    $gray-400 !default;
 $gray:          $gray-600 !default;
 $dark:          $gray-800 !default;
 
-$colorList: () !default;
+$color-list: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$colorList: map-merge(
+$color-list: map-merge(
   (
     'red': $red,
     'orange': $orange,
@@ -59,13 +59,13 @@ $colorList: map-merge(
     'light': $gray-500,
     'dark': $dark
   ),
-  $colorList
+  $color-list
 );
 
 /**
   灰度列表
  */
-$grayList:(
+$gray-list:(
   'black':      $black,
   'darker':     $gray-800,
   'dark':       $gray-600,
@@ -91,12 +91,13 @@ $btn-size-list: map-merge(
   $btn-size-list
 );
 
-$layoutNumber:          5 !default;
+$layout-number:          5 !default;
+$boxy-increase-gradient: 10 !default;
 $line-height-base:      20/14 !default;
 
-$container_padding: rpx(20);
+$container-padding: rpx(20);
 //TODO 该值有待商榷
-$container_width: rpx(750);
+$container-width: rpx(750);
 $border-radius-base:        rpx(8) !default;
 $border-color-default:      #eee !default;
 
@@ -106,4 +107,5 @@ $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
-
+$font-size-max: 40 !default;
+$font-size-min: 24 !default;

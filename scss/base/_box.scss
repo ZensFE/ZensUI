@@ -6,48 +6,48 @@
   外边距、内边距
  */
 @for $i from 0 through $layout-number{
-  .margin#{$i * $boxy-increase-gradient}{ margin: get-layout-size($i, 1); }
-  .margint#{$i * $boxy-increase-gradient}{ margin-top: get-layout-size($i, 1); }
-  .marginb#{$i * $boxy-increase-gradient}{ margin-bottom: get-layout-size($i, 1); }
-  .marginl#{$i * $boxy-increase-gradient}{ margin-left: get-layout-size($i, 1); }
-  .marginr#{$i * $boxy-increase-gradient}{ margin-right: get-layout-size($i, 1); }
-  .margint-n#{$i * $boxy-increase-gradient}{ margin-top: get-layout-size($i, -1); }
-  .marginb-n#{$i * $boxy-increase-gradient}{ margin-bottom: get-layout-size($i, -1); }
-  .marginl-n#{$i * $boxy-increase-gradient}{ margin-left: get-layout-size($i, -1); }
-  .marginr-n#{$i * $boxy-increase-gradient}{ margin-right: get-layout-size($i, -1); }
+  .margin#{$i * $box-increase-gradient}{ margin: get-layout-size($i, 1); }
+  .margint#{$i * $box-increase-gradient}{ margin-top: get-layout-size($i, 1); }
+  .marginb#{$i * $box-increase-gradient}{ margin-bottom: get-layout-size($i, 1); }
+  .marginl#{$i * $box-increase-gradient}{ margin-left: get-layout-size($i, 1); }
+  .marginr#{$i * $box-increase-gradient}{ margin-right: get-layout-size($i, 1); }
+  .margint-n#{$i * $box-increase-gradient}{ margin-top: get-layout-size($i, -1); }
+  .marginb-n#{$i * $box-increase-gradient}{ margin-bottom: get-layout-size($i, -1); }
+  .marginl-n#{$i * $box-increase-gradient}{ margin-left: get-layout-size($i, -1); }
+  .marginr-n#{$i * $box-increase-gradient}{ margin-right: get-layout-size($i, -1); }
 
-  .marginh#{$i * $boxy-increase-gradient}{
-    @extend .marginl#{$i * $boxy-increase-gradient};
-    @extend .marginr#{$i * $boxy-increase-gradient};
+  .marginh#{$i * $box-increase-gradient}{
+    @extend .marginl#{$i * $box-increase-gradient};
+    @extend .marginr#{$i * $box-increase-gradient};
   }
 
-  .marginv#{$i * $boxy-increase-gradient}{
-    @extend .margint#{$i * $boxy-increase-gradient};
-    @extend .marginb#{$i * $boxy-increase-gradient};
+  .marginv#{$i * $box-increase-gradient}{
+    @extend .margint#{$i * $box-increase-gradient};
+    @extend .marginb#{$i * $box-increase-gradient};
   }
-  .padding#{$i * $boxy-increase-gradient}{ padding: get-layout-size($i, 1); }
-  .paddingt#{$i * $boxy-increase-gradient}{ padding-top: get-layout-size($i, 1); }
-  .paddingb#{$i * $boxy-increase-gradient}{ padding-bottom: get-layout-size($i, 1); }
-  .paddingl#{$i * $boxy-increase-gradient}{ padding-left: get-layout-size($i, 1); }
-  .paddingr#{$i * $boxy-increase-gradient}{ padding-right: get-layout-size($i, 1); }
+  .padding#{$i * $box-increase-gradient}{ padding: get-layout-size($i, 1); }
+  .paddingt#{$i * $box-increase-gradient}{ padding-top: get-layout-size($i, 1); }
+  .paddingb#{$i * $box-increase-gradient}{ padding-bottom: get-layout-size($i, 1); }
+  .paddingl#{$i * $box-increase-gradient}{ padding-left: get-layout-size($i, 1); }
+  .paddingr#{$i * $box-increase-gradient}{ padding-right: get-layout-size($i, 1); }
 
-  .paddingh#{$i * $boxy-increase-gradient}{
-    @extend .paddingl#{$i * $boxy-increase-gradient};
-    @extend .paddingr#{$i * $boxy-increase-gradient};
+  .paddingh#{$i * $box-increase-gradient}{
+    @extend .paddingl#{$i * $box-increase-gradient};
+    @extend .paddingr#{$i * $box-increase-gradient};
   }
 
-  .paddingv#{$i * $boxy-increase-gradient}{
-    @extend .paddingt#{$i * $boxy-increase-gradient};
-    @extend .paddingb#{$i * $boxy-increase-gradient};
+  .paddingv#{$i * $box-increase-gradient}{
+    @extend .paddingt#{$i * $box-increase-gradient};
+    @extend .paddingb#{$i * $box-increase-gradient};
   }
-  %top#{$i * $boxy-increase-gradient}{ top: get-layout-size($i, 1); }
-  %right#{$i * $boxy-increase-gradient}{ right: get-layout-size($i, 1); }
-  %left#{$i * $boxy-increase-gradient}{ left: get-layout-size($i, 1); }
-  %bottom#{$i * $boxy-increase-gradient}{ bottom: #{ get-layout-size($i, 1)}; }
-  %top-n#{$i * $boxy-increase-gradient}{ top: get-layout-size($i, -1); }
-  %right-n#{$i * $boxy-increase-gradient}{ right: get-layout-size($i, -1); }
-  %left-n#{$i * $boxy-increase-gradient}{ left: get-layout-size($i, -1); }
-  %bottom-n#{$i * $boxy-increase-gradient}{ bottom: get-layout-size($i, -1); }
+  %top#{$i * $box-increase-gradient}{ top: get-layout-size($i, 1); }
+  %right#{$i * $box-increase-gradient}{ right: get-layout-size($i, 1); }
+  %left#{$i * $box-increase-gradient}{ left: get-layout-size($i, 1); }
+  %bottom#{$i * $box-increase-gradient}{ bottom: #{ get-layout-size($i, 1)}; }
+  %top-n#{$i * $box-increase-gradient}{ top: get-layout-size($i, -1); }
+  %right-n#{$i * $box-increase-gradient}{ right: get-layout-size($i, -1); }
+  %left-n#{$i * $box-increase-gradient}{ left: get-layout-size($i, -1); }
+  %bottom-n#{$i * $box-increase-gradient}{ bottom: get-layout-size($i, -1); }
 }
 
 .border {

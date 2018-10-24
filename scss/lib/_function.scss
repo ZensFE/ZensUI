@@ -95,10 +95,10 @@
 
 @function get-layout-size($i,$reverse:1) {
   @if ($is-pc) {
-    @return $i * $reverse * $boxy-increase-gradient +px;
+    @return $i * $reverse * $box-increase-gradient +px;
   }
   @else if($is-wx) {
-    @return rpx($i * $reverse * $boxy-increase-gradient);
+    @return rpx($i * $reverse * $box-increase-gradient);
   }
   @else {
     @return $i * $reverse / 7.5 +rem;

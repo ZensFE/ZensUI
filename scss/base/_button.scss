@@ -4,6 +4,11 @@
 @import "../lib/function";
 $btn-font-size-base: 52;
 
+@mixin button-active($color, $background) {
+  background-color: darken($background, 10%);
+  color: darken($color, 10%);
+}
+
 @mixin button-variant($color, $background, $border) {
   color: $color;
   background-color: $background;
@@ -20,6 +25,16 @@ $btn-font-size-base: 52;
     &.active {
       background-color: $background;
       border-color: $border;
+    }
+  }
+
+  &:active {
+    @include button-active($color, $background);
+  }
+
+  @if ($is-wx) {
+    &.button-hover {
+      @include button-active($color, $background);
     }
   }
 }

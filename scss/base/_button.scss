@@ -52,9 +52,7 @@ $btn-font-size-base: 52;
 }
 
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
   text-align: center;

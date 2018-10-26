@@ -52,13 +52,15 @@ $btn-font-size-base: 52;
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
   border-radius: rpx(0);
-  //box-sizing: content-box;
 
   @include button-variant($white, $primary, map-get($color-list,'lighter'));
   //将base的尺寸设置为默认值

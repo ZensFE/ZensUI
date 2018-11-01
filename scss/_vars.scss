@@ -56,7 +56,7 @@ $color-list: map-merge(
     'white': $white,
     'black': $black,
     'gray': $gray,
-    'light': $gray-500,
+    'light': $light,
     'dark': $dark
   ),
   $color-list
@@ -109,3 +109,9 @@ $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 $font-size-max: 40 !default;
 $font-size-min: 24 !default;
+
+//shadow
+$box-shadow:               0 rpx(2) rpx(16) #c8c8c8 !default;
+$box-shadow-l:             0 rpx(2) rpx(32) #c8c8c8 !default;
+$box-shadow-s:             0 rpx(2) rpx(8) #c8c8c8 !default;
+

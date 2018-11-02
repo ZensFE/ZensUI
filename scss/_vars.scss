@@ -90,7 +90,10 @@ $btn-size-list: map-merge(
   ),
   $btn-size-list
 );
+//按钮圆角
+$btn-radius-size: rpx(10);
 
+//布局相关
 $layout-number:          5 !default;
 $box-increase-gradient: 10 !default;
 $line-height-base:      20/14 !default;

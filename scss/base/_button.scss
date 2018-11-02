@@ -65,7 +65,7 @@ $btn-font-size-base: 52;
   @include button-size(nth(map-get($btn-size-list,'base'),1),nth(map-get($btn-size-list,'base'),2),nth(map-get($btn-size-list,'base'),3));
 
   &.radius {
-    border-radius: rpx(10);
+    border-radius: $btn-radius-size;
   }
 
   &.pill {

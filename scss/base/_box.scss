@@ -79,6 +79,10 @@
     border-bottom: 1px solid $border-color-default;
   }
 
+  &n {
+    border: none;
+  }
+
   &.item {
     > {
       @include uni-selector() {

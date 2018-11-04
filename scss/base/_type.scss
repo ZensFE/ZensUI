@@ -1,13 +1,13 @@
 @import "../vars";
+$color-full-list: map-merge($color-list, $gray-list);
 //背景色
-@each $color-name,$color-value in $color-list {
+@each $color-name,$color-value in $color-full-list {
   .bg-#{$color-name} {
     background-color: $color-value;
   }
 }
 
 //字体色
-$color-full-list: map-merge($color-list, $gray-list);
 @each $color-name,$color-value in $color-full-list {
   .text-#{$color-name} {
     color: $color-value;

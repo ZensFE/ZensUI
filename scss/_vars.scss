@@ -9,13 +9,30 @@ $is-pc: false !default;     //是否为PC端
 */
 
 //灰度定义
-$white:    #fff !default;
-$gray-100: #ebebeb !default;
-$gray-400: #b3b3b3 !default;
-$gray-500: #999 !default;
-$gray-600: #666 !default;
-$gray-800: #333 !default;
 $black:    #000 !default;
+$gray-800: #333 !default;
+$gray-600: #666 !default;
+$gray-500: #999 !default;
+$gray-400: #b3b3b3 !default;
+$gray-100: #ebebeb !default;
+$white:    #fff !default;
+
+/**
+  灰度列表
+ */
+$gray-list: () !default;
+$gray-list: map-merge(
+  (
+    'black':      $black,
+    'darker':     $gray-800,
+    'dark':       $gray-600,
+    'gray':       $gray-500,
+    'light':      $gray-400,
+    'lighter':    $gray-100,
+    'white':      $white
+  ),
+  $gray-list
+);
 
 //基础色值定义
 $blue:    #007bff !default;
@@ -37,10 +54,9 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$light-gray:    $gray-400 !default;
-$gray:          $gray-600 !default;
-$dark:          $gray-800 !default;
+$light:         map-get($gray-list, 'light');
+$gray:          map-get($gray-list, 'gray');
+$dark:          map-get($gray-list, 'dark');
 
 $color-list: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -60,19 +76,6 @@ $color-list: map-merge(
     'dark': $dark
   ),
   $color-list
-);
-
-/**
-  灰度列表
- */
-$gray-list:(
-  'black':      $black,
-  'darker':     $gray-800,
-  'dark':       $gray-600,
-  'gray':       $gray-500,
-  'light':      $gray-400,
-  'lighter':    $gray-100,
-  'white':      $white
 );
 
 /**

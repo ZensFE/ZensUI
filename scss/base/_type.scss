@@ -1,15 +1,16 @@
 @import "../vars";
 //背景色
-@each $colorName,$colorValue in $color-list {
-  .bg-#{$colorName} {
-    background-color: $colorValue;
+@each $color-name,$color-value in $color-list {
+  .bg-#{$color-name} {
+    background-color: $color-value;
   }
 }
 
 //字体色
-@each $colorName,$colorValue in $color-list {
-  .text-#{$colorName} {
-    color: $colorValue;
+$color-full-list: map-merge($color-list, $gray-list);
+@each $color-name,$color-value in $color-full-list {
+  .text-#{$color-name} {
+    color: $color-value;
   }
 }
 

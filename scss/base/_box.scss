@@ -156,3 +156,18 @@
     transform: scaleX(.5);
   }
 }
+
+/**
+  盒模型定义
+ */
+.b-box {
+  @include box-sizing(border-box);
+}
+
+.p-box {
+  @include box-sizing(padding-box);
+}
+
+.c-box {
+  @include box-sizing(content-box);
+}

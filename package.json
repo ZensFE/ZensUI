@@ -75,7 +75,7 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
-    "highlight.js": "^9.3.0",
+    "highlight.js": "^9.13.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^2.30.1",
     "htmlparser": "^1.7.7",

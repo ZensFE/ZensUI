@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZensUI</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="//unpkg.com/zens-ui@1.0.8/dist/css/ZensUI.css">
+  <script src="//unpkg.com/vue/dist/vue.js"></script>
+  <script src="//unpkg.com/docsify-demo-box-vue@1.1.0/dist/docsify-demo-box-vue.min.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  var jsResources = '<scr' + 'ipt src="//unpkg.com/vue/dist/vue.js"></scr' + 'ipt>'
+  var cssResources = '@import url("//unpkg.com/zens-ui@1.0.8/dist/css/ZensUI.mp.css");'
+  var bootCode = 'var globalVariable = "leon"'
+  var globalVariable = "leon"
+
+  window.$docsify = {
+    name: 'ZensUI',
+    auto2top: true,
+    repo: '/ZensFE/ZensUI',
+    plugins: [
+      DemoBoxVue.create(jsResources, cssResources, bootCode)
+    ]
+  }
+</script>
+<script src="//unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+</html>

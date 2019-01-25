@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-    <h1>FireAnts</h1>
+    <h1>Zens UI</h1>
   </nav>
 </template>
 
@@ -15,8 +15,10 @@ export default {
 
 <style lang="scss" scoped>
   /***** Top menu *****/
+  $main-color: #f2b57b;
+
   nav {
-    background-color: #fff;
+    background-color: $main-color;
     border-bottom: solid 4px #efefef;
     color: white;
     height: 80px;
@@ -24,10 +26,9 @@ export default {
 
     h1{
       width: 200px;
-      height: 54px;
+      height: 45px;
       overflow: hidden;
-      line-height: 2000px;
-      background: url("../logo.png") no-repeat left top;
+      /* background: url("../logo.png") left/30% no-repeat; */
     }
   }
 </style>

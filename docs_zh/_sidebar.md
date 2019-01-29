@@ -1,6 +1,6 @@
 - 入门
 
-  - [介绍](../docs_zh/intro/introduction.md)
+  - [介绍](/zh-cn/intro/introduction.md)
   - [快速上手](../docs_zh/intro/quickstart.md)
   - [下载](../docs_zh/intro/download.md)
 

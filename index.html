@@ -20,7 +20,9 @@
   window.$docsify = {
     alias: {
       '.*?/changelog': 'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG',
-      '/zh-cn/(.*)': '../docs_zh/$1'
+      '/zh-cn/(.*)': '../docs_zh/$1',
+      '/.*/_sidebar.md': '/_sidebar.md',
+      '/.*/_navbar.md': '/_navbar.md'
     },
     name: 'ZensUI',
     auto2top: true,

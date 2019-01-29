@@ -1,5 +1,5 @@
 ```html
-/*vue*/
+/*html*/
 
 <template>
     <div class="zens-container">

@@ -18,9 +18,18 @@
   var globalVariable = "leon"
 
   window.$docsify = {
+    alias: {
+      '.*?/changelog': 'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG',
+      '/zh-cn/(.*)': '../docs_zh/$1'
+    },
     name: 'ZensUI',
     auto2top: true,
     repo: '/ZensFE/ZensUI',
+    basePath: './docs/',
+    loadSidebar: true,
+    mergeNavbar: true,
+    loadNavbar: true,
+    coverpage: true,
     plugins: [
       DemoBoxVue.create(jsResources, cssResources, bootCode)
     ]

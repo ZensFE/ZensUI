@@ -15,9 +15,7 @@
 ## ZensUI
 >本框架海量参考了[CMUI](https://github.com/tgoufe/CyanMapleDesign)的代码，向CMUI的开发者致敬
 
-`ZensUI`为前端开发者提供了一个易上手的、语义化的、高兼容性的前端UI框架。致力于帮助开发者可以快速构建自己的web应用。同时`ZensUI`也是跨平台的，目前支持：
-
-支持的平台有：
+`ZensUI`为前端开发者提供了一个易上手的、语义化的、高兼容性的前端UI框架。致力于帮助开发者可以快速构建自己的web应用。同时`ZensUI`也是跨平台的，目前支持的平台有：
  * 移动端web
  * PC端web
  * 微信小程序

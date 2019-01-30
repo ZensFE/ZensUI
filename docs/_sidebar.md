@@ -1,15 +1,14 @@
 - 入门
 
-  - [介绍](/zh-cn/intro/introduction.md)
-  - [快速上手](/zh-cn/intro/quickstart.md)
-  - [下载](/zh-cn/intro/download.md)
+  - [快速上手](./intro/quickstart.md)
+  - [下载](./intro/download.md)
 
 - 定制化
 
   - [定制化方法](ways.md)
   - [配置项](configuration.md)
 
-- 指南
+- 开发文档
 
   - 布局
   - 盒子

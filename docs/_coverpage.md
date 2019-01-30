@@ -6,7 +6,7 @@
 
 - 轻量级 (~8kB gzipped)
 - 无需打包构建，直接应用
-- 跨平台支持——移动端、PC端、原生端
+- 跨平台支持——Mobile端、PC端、Native端
 
 [GitHub](https://github.com/ZensFE/ZensUI/)
-[Getting Started](#what-is-zens-ui)
+[开始](#Zens-UI-是什么)

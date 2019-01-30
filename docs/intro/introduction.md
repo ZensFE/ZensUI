@@ -1,24 +1,24 @@
-## Introduction
+## zens-ui是什么
 
-### Zens UI 是什么？
-`Zens UI`是一款纯CSS的前端框架，他旨在帮前端开发者写出高效的、可维护的样式代码（html+css）。
+## 前端发展趋势
 
-### 为什么使用Zens UI？
+## 跨平台
 
-#### 基于设计语言
-`Zens UI`的底层思想是基于`设计语言`这个基本概念。
+## 设计语言拆解
 
-当我们用自然语言去描述一个页面或页面元素时，我们会说 "一个圆角的红色按钮"，对于一个有设计语言的Web应用来说，当我们说出上面这段话时，不管那个按钮在什么页面，这些按钮的表现都应该是一致的。
-
-所以我们希望在前端开发过程中，描述出元素的特征或页面的结构时，代码同时就一定写出来了。比如下面的样子
-```html
-<!--这是一个按钮的例子-->
-<button class="btn red radius"></button>
+## 目录结构
 ```
-我们可以从上面的例子可以看出，`.btn`确定了元素的基本性质，然后`.red`和`.radius`作为`btn`的形容词，逐渐地细化按钮的属性。
-
-#### 多端支持
-我们除了支持所有的web和native环境外，我还针对小程序进行了充分的优化和适配。做到尽可能多的环境可以流畅的运行。
-
-#### 可定制
-Zens UI可以提供自定义参数，可以追加自己的customize.scss来进行配置参数的修改
+ZensUI/
+    ├─ dist/                                           
+    │     └── css/                      
+    │         ├─ZensUI.css 
+    │         ├─ZensUI.css.map
+    │         ├─ZensUI.min.css
+    │         ├─ZensUI.min.css.map 
+    │         ├─ZensUI.mp.css
+    │         ├─ZensUI.mp.css.map
+    │         ├─ZensUI.mp.min.css
+    │         └─ZensUI.mp.min.css.map    
+    └─ scss/ 
+       └─ZensUI.scss  
+```

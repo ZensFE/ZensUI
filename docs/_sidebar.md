@@ -1,15 +1,19 @@
-- Getting started
+- 入门
 
-  - [Quick start](./docs/intro/quickstart.md)
-  - [Writing more pages](more-pages.md)
-  - [Custom navbar](custom-navbar.md)
-  - [Cover page](cover.md)
+  - [介绍](/zh-cn/intro/introduction.md)
+  - [快速上手](/zh-cn/intro/quickstart.md)
+  - [下载](/zh-cn/intro/download.md)
 
-- Customization
+- 定制化
 
-  - [Configuration](configuration.md)
-  - [Themes](themes.md)
-  - [List of Plugins](plugins.md)
-  - [Write a Plugin](write-a-plugin.md)
-  - [Markdown configuration](markdown.md)
-  - [Language highlighting](language-highlight.md)
+  - [定制化方法](ways.md)
+  - [配置项](configuration.md)
+
+- 指南
+
+  - 布局
+  - 盒子
+  - button
+  - 其他
+  
+- 变更日志

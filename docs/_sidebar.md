@@ -1,12 +1,12 @@
-- 入门
+- [入门](/#zens-ui-是什么)
 
   - [快速上手](./intro/quickstart.md)
   - [下载](./intro/download.md)
 
 - 定制化
 
-  - [定制化方法](ways.md)
-  - [配置项](configuration.md)
+  - [定制化方法](./intro/methods.md)
+  - [配置项](./intro/configuration.md)
 
 - 开发文档
 

@@ -62,18 +62,20 @@ $color-list: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $color-list: map-merge(
   (
+    'primary': $primary,
     'red': $red,
     'orange': $orange,
     'yellow': $yellow,
     'green': $green,
     'blue': $blue,
     'purple': $purple,
-    'primary': $primary,
-    'white': $white,
     'black': $black,
+    'dark': $dark,
+    'darker': map-get($gray-list, 'darker'),
     'gray': $gray,
     'light': $light,
-    'dark': $dark
+    'lighter': map-get($gray-list, 'lighter'),
+    'white': $white,
   ),
   $color-list
 );

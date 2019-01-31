@@ -6,7 +6,7 @@
 - 定制化
 
   - [定制化方法](/customization/methods.md)
-  - [配置项](./intro/configuration.md)
+  - [配置项](/customization/configuration.md)
 
 - 开发文档
 

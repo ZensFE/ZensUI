@@ -13,6 +13,7 @@ import 'zens-ui/dist/css/ZensUI.css'
 
 #### CDN
 
+TODO 关于flexible的说明
 引入flexible.js
 ```html
 <script src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/js/flexible.js"></script>

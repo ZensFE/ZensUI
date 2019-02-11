@@ -19,8 +19,9 @@
     "css-minify-pc": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.pc.min.css dist/css/ZensUI.pc.css",
     "css-minify": "npm run css-minify-origin && npm run css-minify-mp && npm run css-minify-pc",
     "copy-file": "node build/copyFile.js",
+    "zip-file": "rm -f dist/*.zip && zip -r dist/zens-ui.zip dist/*",
     "prepublish": "npm run build",
-    "build": "npm run scss-compile && npm run css-minify && npm run copy-file"
+    "build": "npm run scss-compile && npm run css-minify && npm run copy-file && npm run zip-file"
   },
   "repository": {
     "type": "git",

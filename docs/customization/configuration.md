@@ -48,5 +48,4 @@ gray-list: 通过配置`$gray-list`来对灰度进行调整，默认灰度值如
         
     }
 </script>
-<style>
 ```

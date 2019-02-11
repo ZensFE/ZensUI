@@ -16,6 +16,7 @@
     "css-minify-origin": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.min.css dist/css/ZensUI.css",
     "css-minify-mp": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.mp.min.css dist/css/ZensUI.mp.css",
     "css-minify": "npm run css-minify-origin && npm run css-minify-mp",
+    "copy-file": "node build/copyFile.js",
     "prepublish": "npm run build",
     "build": "npm run scss-compile && npm run css-minify"
   },
@@ -69,6 +70,7 @@
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
+    "filecopy": "^4.0.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",

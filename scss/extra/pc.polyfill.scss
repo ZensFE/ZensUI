@@ -2,5 +2,14 @@
   This part is polyfill for PC development
  */
 
-//is-wx set true globally
+//is-pc set true globally
 $is-pc: true;
+
+// stylelint-disable function-comma-newline-after
+$btn-size-list:
+  (
+    'base': (32, 15, 15),
+    'small': (28, 12, 13),
+    'big': (44, 15, 16)
+  );
+$btn-radius-size: rpx(5);

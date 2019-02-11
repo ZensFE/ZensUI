@@ -63,7 +63,6 @@
 </template>
 <script>
     import Vue from 'vue'
-    import '../scss/ZensUI.scss'
     export default {
       data(){
         return {

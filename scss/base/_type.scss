@@ -78,9 +78,9 @@ $color-full-list: map-merge($color-list, $gray-list);
 }
 
 // text weight
-.fw-light             { font-weight: $font-weight-light !important; }
-.fw-lighter           { font-weight: $font-weight-lighter !important; }
-.fw-normal            { font-weight: $font-weight-normal !important; }
-.fw-bold              { font-weight: $font-weight-bold !important; }
-.fw-bolder            { font-weight: $font-weight-bolder !important; }
-.font-italic          { font-style: italic !important; }
+.fw-light             { font-weight: $font-weight-light; }
+.fw-lighter           { font-weight: $font-weight-lighter; }
+.fw-normal            { font-weight: $font-weight-normal; }
+.fw-bold              { font-weight: $font-weight-bold; }
+.fw-bolder            { font-weight: $font-weight-bolder; }
+.font-italic          { font-style: italic; }

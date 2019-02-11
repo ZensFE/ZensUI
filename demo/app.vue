@@ -62,15 +62,8 @@
 
 </template>
 <script>
-    import Vue from 'vue'
     export default {
-      data(){
-        return {
-          test: '参与中'
-        }
-      },
-      mounted(){
-      }
+      data () {}
     }
 </script>
 <style lang="scss">

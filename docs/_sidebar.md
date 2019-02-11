@@ -10,9 +10,10 @@
 
 - 开发文档
 
-  - 布局
-  - 盒子
-  - button
+  - [布局(Layout)](/guide/layout.md)
+  - [盒子(Box)](/guide/box.md)
+  - [文字(Font)](/guide/font.md)
+  - [按钮(Button)](/guide/button.md)
   - 其他
   
 - 变更日志

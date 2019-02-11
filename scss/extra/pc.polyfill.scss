@@ -8,8 +8,13 @@ $is-pc: true;
 // stylelint-disable function-comma-newline-after
 $btn-size-list:
   (
-    'base': (32, 15, 15),
+    'base': (32, 14, 15),
     'small': (28, 12, 13),
     'big': (44, 15, 16)
   );
 $btn-radius-size: rpx(5);
+
+// normalize PC
+button:focus {
+  outline: none;
+}

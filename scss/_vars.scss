@@ -96,16 +96,16 @@ $btn-size-list: map-merge(
   $btn-size-list
 );
 //按钮圆角
-$btn-radius-size: rpx(10);
+$btn-radius-size: rpx(10) !default;
 
 //布局相关
 $layout-number:          5 !default;
 $box-increase-gradient: 10 !default;
 $line-height-base:      20/14 !default;
 
-$container-padding: rpx(20);
+$container-padding: rpx(20) !default;
 //TODO 该值有待商榷
-$container-width: rpx(750);
+$container-width: rpx(750) !default;
 $border-radius-base:        rpx(8) !default;
 $border-color-default:      #eee !default;
 

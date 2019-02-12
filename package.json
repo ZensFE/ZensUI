@@ -20,7 +20,7 @@
     "css-minify": "npm run css-minify-origin && npm run css-minify-mp && npm run css-minify-pc",
     "copy-file": "node build/copyFile.js",
     "zip-file": "rm -f dist/*.zip && zip -r dist/zens-ui.zip dist/*",
-    "prepublish": "npm run build",
+    "prepublish": "npm run test && npm run build",
     "build": "npm run scss-compile && npm run css-minify && npm run copy-file && npm run zip-file"
   },
   "repository": {

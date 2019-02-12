@@ -62,20 +62,12 @@
 
 </template>
 <script>
-    import Vue from 'vue'
-    import '../scss/ZensUI.scss'
     export default {
-      data(){
-        return {
-          test: '参与中'
-        }
-      },
-      mounted(){
-      }
+      data () {}
     }
 </script>
 <style lang="scss">
-  @import "../scss/ZensUI";
+  @import "../scss/ZensUI.pc";
 
   html {
     background-color: #fff;
@@ -86,7 +78,7 @@
   }
 
   .button-list button {
-    width: 200px;
+    width: 150px;
     margin: 5px 0;
   }
 

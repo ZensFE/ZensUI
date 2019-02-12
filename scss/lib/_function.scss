@@ -7,6 +7,9 @@
   @if ($is-wx) {
     @return $size + rpx;
   }
+  @else if($is-pc) {
+    @return $size + px;
+  }
   @else {
     //TODO 暂时只用非响应式的px单位
     @return $size/2 + px;
@@ -341,6 +344,9 @@
   outline-offset: -2px;
 }
 
+/*
+ 针对小程序端不支持*选择的调整
+ */
 @mixin uni-selector() {
   $is-wx: false !default;
   $weixin-elements: (view, swiper, icon, text, rich-text, progress, button, checkbox, form, input,

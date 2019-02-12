@@ -12,12 +12,16 @@
     "test": "stylelint -s scss ./scss/**/*.scss ./scss/*.scss",
     "scss-compile-origin": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.scss --output ./dist/css/",
     "scss-compile-mp": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.mp.scss --output ./dist/css/",
-    "scss-compile": "npm run scss-compile-origin && npm run scss-compile-mp",
+    "scss-compile-pc": "node-sass --source-map true --source-map-contents true ./scss/ZensUI.pc.scss --output ./dist/css/",
+    "scss-compile": "npm run scss-compile-origin && npm run scss-compile-mp && npm run scss-compile-pc",
     "css-minify-origin": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.min.css dist/css/ZensUI.css",
     "css-minify-mp": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.mp.min.css dist/css/ZensUI.mp.css",
-    "css-minify": "npm run css-minify-origin && npm run css-minify-mp",
+    "css-minify-pc": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.pc.min.css dist/css/ZensUI.pc.css",
+    "css-minify": "npm run css-minify-origin && npm run css-minify-mp && npm run css-minify-pc",
+    "copy-file": "node build/copyFile.js",
+    "zip-file": "rm -f dist/*.zip && zip -r dist/zens-ui.zip dist/*",
     "prepublish": "npm run build",
-    "build": "npm run scss-compile && npm run css-minify"
+    "build": "npm run scss-compile && npm run css-minify && npm run copy-file && npm run zip-file"
   },
   "repository": {
     "type": "git",
@@ -69,6 +73,7 @@
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
+    "filecopy": "^4.0.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",

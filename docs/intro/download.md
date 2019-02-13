@@ -9,19 +9,17 @@ ZensUI/
     ├─ css/                      
     │  ├─ZensUI.css 
     │  ├─ZensUI.min.css
+    │  ├─ZensUI.pc.css
+    │  ├─ZensUI.pc.min.css
     │  ├─ZensUI.mp.css
     │  └─ZensUI.mp.min.css
     │
     ├─ scss/ 
     │  ├─ZensUI.scss  
     │  ├─ZensUI.mp.scss 
+    │  ├─ZensUI.pc.scss 
     │  └─_var.scss
     │
     └─ js/ 
         └─flexible.js   
 ```
-
-### 微信小程序
-由于微信小程序提供了独有的`rpx`单位，解决了自适应问题，所以不再需要配合`flexible.js`来实现屏幕自适应，单独引入`.css`文件就好。
-
-[小程序端地址](https://unpkg.com/zens-ui/dist/css/ZensUI.mp.css)

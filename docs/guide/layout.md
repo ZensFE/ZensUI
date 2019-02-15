@@ -250,19 +250,43 @@
 /*vue*/
 <template>
   <div class="pos-r flex-demo-container">
-  
+     <h3>横向排列</h3>
+    <span> 默认情况 .flex-container</span>
+    <div class=" flex-container">
+      <div class="inner"></div>
+      <div class="inner"></div>
+    </div>
+    
     <span>.flex-container .top</span>
     <div class=" flex-container top">
       <div class="inner"></div>
       <div class="inner"></div>
     </div>
     
-    <span>.flex-container</span>
+    <span>.flex-container .bottom</span>
+    <div class=" flex-container bottom">
+      <div class="inner"></div>
+      <div class="inner"></div>
+    </div>
+   <hr>
+   <h3>纵向排列</h3>
+    <span>.flex-container-col .left</span>
     <div class="flex-container-col left">
       <div class="inner"></div>
       <div class="inner"></div>
     </div>
-   
+       
+    <span>.flex-container-col .right</span>
+    <div class="flex-container-col right">
+      <div class="inner"></div>
+      <div class="inner"></div>
+    </div>
+       
+    <span>.flex-container-col </span>
+    <div class="flex-container-col ">
+      <div class="inner"></div>
+      <div class="inner"></div>
+    </div>   
   </div>
 </template>
 
@@ -273,6 +297,27 @@
 </script>
 ```
 
+#### 四项目
+
+
+```html
+/*vue*/
+<template>
+  <div class="pos-r flex-demo-container">
+  
+    <span>.flex-container .top .left</span>
+    <div class=" flex-container top left">
+      <div class="inner"></div>
+    </div>
+  </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+```
 
 
 

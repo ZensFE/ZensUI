@@ -297,28 +297,6 @@
 </script>
 ```
 
-#### 四项目
-
-
-```html
-/*vue*/
-<template>
-  <div class="pos-r flex-demo-container">
-  
-    <span>.flex-container .top .left</span>
-    <div class=" flex-container top left">
-      <div class="inner"></div>
-    </div>
-  </div>
-</template>
-
-<script>
-    export default {
-        
-    }
-</script>
-```
-
 
 
 

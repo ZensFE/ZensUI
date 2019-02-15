@@ -250,7 +250,7 @@
 /*vue*/
 <template>
   <div class="pos-r flex-demo-container">
-     <h3>横向排列</h3>
+    <h4>横向排列</h4>
     <span> 默认情况 .flex-container</span>
     <div class=" flex-container">
       <div class="inner"></div>
@@ -269,7 +269,7 @@
       <div class="inner"></div>
     </div>
    <hr>
-   <h3>纵向排列</h3>
+   <h4>纵向排列</h4>
     <span>.flex-container-col .left</span>
     <div class="flex-container-col left">
       <div class="inner"></div>
@@ -297,6 +297,99 @@
 </script>
 ```
 
+#### 其他常用弹性布局
+
+- `.vfull`使容器内的元素在垂直方向铺满。
+
+```html
+/*vue*/
+<template>
+  <div class="pos-r ">
+    <div class="flex-container vfull bg-light padding10" style="height: 100px;">
+      <div class="padding10 text-gray bg-lighter">最简单的网格布局</div>
+      <div class="padding10 text-gray bg-lighter">最简单的网格布局</div>
+    </div>  
+  </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+```
+
+- `.hfull`使容器内的元素在水平方向铺满。
+
+```html
+/*vue*/
+<template>
+  <div class="pos-r ">
+    <div class="flex-container hfull bg-light padding10" style="height: 100px;">
+      <div class="padding10 text-gray bg-white border">最简单的网格布局</div>
+      <div class="padding10 text-gray bg-white border">最简单的网格布局</div>
+    </div>  
+  </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+```
 
 
+#### 比例分配
+
+可以通过`.flex#{grow}`来调整`flex-container`内部元素的显示比例，如`.flex1`代表容器剩余宽度进行等分后占用`1份`。
+即该元素的CSS属性`flex`为`1`。
+
+下面的例子中，整个容器的宽度除去`固定宽度`元素的宽度后，剩余宽度被其他元素`按比例`均分，共15份(1+2+3+4+5)，所以`.flex1`占用1份，`.flex2`占用2份，以此类推。
+
+```html
+/*vue*/
+<template>
+  <div class="pos-r">
+    <div class=" flex-container vfull text-white text-center" style="height: 100px; width: 100%;">
+      <div class="bg-black" style="width: 100px;">固定宽度</div>
+      <div class="bg-darker flex1">flex1</div>
+      <div class="bg-dark flex2">flex2</div>
+      <div class="bg-gray flex3">flex3</div>
+      <div class="bg-light flex4">flex4</div>
+      <div class="bg-lighter flex5 text-gray">flex5</div>
+    </div> 
+  </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+```
+
+### 图片容器
+
+可以图片容器上追加`.img-container`来控制内部图片的显示。
+
+```html
+/*vue*/
+<template>
+  <div class="pos-r">
+    <div class="img-container bg-lighter" style="width: 200px; height: 200px;">
+      <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo2.jpeg" alt="">
+    </div>
+    <div class="img-container bg-lighter" style="width: 200px; height: 200px;">
+      <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo2.jpeg" alt="">
+    </div>
+  </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+```
 

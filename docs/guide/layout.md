@@ -91,7 +91,7 @@
 除此上面四种之外，还有填充容器——`.abs-full`
 
 #### 绝对定位（position: fixed）
-`绝对定位（fixed）`的语法上面`.abs-#{position}`是一致的，语法如下：
+`绝对定位（fixed）`的语法与上面`.abs-#{position}`是一致的，语法如下：
 
 ```scss
 .fixed-#{position}
@@ -377,10 +377,88 @@
 /*vue*/
 <template>
   <div class="pos-r">
+    <h3>照片尺寸小于容器大小</h3>
+    <h4>默认情况</h4>
     <div class="img-container bg-lighter" style="width: 200px; height: 200px;">
       <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo2.jpeg" alt="">
     </div>
-    <div class="img-container bg-lighter" style="width: 200px; height: 200px;">
+    
+    <h4>照片铺满 .img-container .full</h4>
+    <div class="img-container full bg-lighter" style="width: 200px; height: 200px;">
+      <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo2.jpeg" alt="">
+    </div>
+  </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+```
+
+- `.flex-x` ：保持原有比例，截取左右多余部分，纵向铺满
+
+```html
+/*vue*/
+<template>
+  <div class="pos-r box-container">
+  <h5>左侧是默认情况，右侧使用`.flex-x`后</h5>
+    <div class="img-container bg-lighter float-left" style="width: 200px; height: 200px;">
+      <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo3.jpeg" alt="">
+    </div>
+    <div class="img-container flex-x bg-lighter float-left clearfix marginl20" style="width: 200px; height: 200px;">
+      <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo3.jpeg" alt="">
+    </div>
+  </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+```
+
+- `.flex-y` ：保持原有比例，截取上下多余部分，横向铺满
+
+```html
+/*vue*/
+<template>
+  <div class="pos-r box-container">
+    <h5>左侧是默认情况，右侧使用`.flex-y`后</h5>
+    <div class="img-container bg-lighter clearfix float-left" style="width: 200px; height: 200px;">
+      <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo4.jpeg" alt="">
+    </div>
+    <div class="img-container flex-y bg-lighter clearfix float-left marginl20" style="width: 200px; height: 200px;">
+      <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo4.jpeg" alt="">
+    </div>
+  </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+```
+
+- 改变形状
+
+```html
+/*vue*/
+<template>
+  <div class="pos-r">
+    <h4>圆形 .round</h4>
+    <div class="img-container round" style="width: 100px; height: 100px;">
+      <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo2.jpeg" alt="">
+    </div>
+    <h4>圆角 .radius</h4>
+    <div class="img-container radius" style="width: 100px; height: 100px;">
+      <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo2.jpeg" alt="">
+    </div>
+    <h4>边框 .border</h4>
+     <div class="img-container border" style="width: 100px; height: 100px;">
       <img src="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/img-demo2.jpeg" alt="">
     </div>
   </div>

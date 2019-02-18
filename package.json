@@ -20,8 +20,9 @@
     "css-minify-pc": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/css/ZensUI.pc.min.css dist/css/ZensUI.pc.css",
     "css-minify": "npm run css-minify-origin && npm run css-minify-mp && npm run css-minify-pc",
     "copy-js": "cp-cli js/flexible.js dist/js/flexible.js",
+    "copy-wxss": "cp-cli dist/css/ZensUI.mp.css dist/wxss/ZensUI.mp.wxss",
     "copy-scss": "cp-cli scss dist/scss/",
-    "copy-file": "npm run copy-js && npm run copy-scss",
+    "copy-file": "npm run copy-js && npm run copy-scss && npm run copy-wxss",
     "zip-file": "rm -f dist/*.zip && zip -r dist/zens-ui.zip dist/*",
     "prepublish": "npm run test && npm run build",
     "build": "npm run scss-compile && npm run css-minify && npm run copy-file && npm run zip-file"

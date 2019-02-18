@@ -17,6 +17,7 @@
 
 
 示例代码：
+注意： 在`微信小程序`中，单位会变成`rpx`
 ```html
 <!-- 以下这两种写法等价 -->
 <div class="padding20 margin30"></div>

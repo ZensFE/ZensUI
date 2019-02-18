@@ -234,7 +234,9 @@
 }
 
 .flex-container-col {
-  @extend .flex-container;
+  @include display-flex();
+  @include align-items();
+  @include justify-content();
   @include flex-direction();
 
   &.round {

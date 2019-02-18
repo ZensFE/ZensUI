@@ -27,8 +27,8 @@
 
 #### 绝对定位（position: absolute）
 `绝对定位(absolute)`中还封装了几种常用的布局方式。
-- 水平居中： `.vcenter`
-- 垂直居中： `.hcenter`
+- 水平居中： `.hcenter`
+- 垂直居中： `.vcenter`
 - 水平和垂直都居中： `.fullcenter`
 
 ```html

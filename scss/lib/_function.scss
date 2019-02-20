@@ -1,13 +1,12 @@
-@function px($width) {
-  @return $width / 37.5 +rem;
-}
-
 //尺寸相关的全局封装
 @function rpx($size) {
   @if ($is-wx) {
     @return $size + rpx;
   }
   @else if($is-pc) {
+    @return $size + px;
+  }
+  @else if ($is-weex) {
     @return $size + px;
   }
   @else {

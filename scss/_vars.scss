@@ -1,8 +1,9 @@
 /**
   基础变量
  */
-$is-wx: false !default;    //是否为微信小程序
-$is-pc: false !default;     //是否为PC端
+$is-wx: false !default;    // 是否为微信小程序
+$is-pc: false !default;     // 是否为PC端
+$is-weex: false !default;   // 是否为Weex
 
 /*
 *   颜色系统

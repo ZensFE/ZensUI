@@ -1,6 +1,6 @@
 {
   "name": "zens-ui",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "This is a UI frame designed for ZensFE Team.",
   "main": "index.js",
   "author": "Wang Chong",

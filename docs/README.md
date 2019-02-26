@@ -12,7 +12,7 @@
  * 移动端web
  * PC端web
  * 微信小程序
- * 还在测试阶段的平台 —— [Weex](http://weex.apache.org/cn/)、[Flutter](https://flutter.io/)、[ReactNative](https://facebook.github.io/react-native/)
+ * 还在测试阶段的平台 —— [Weex](http://weex.apache.org/cn/)
  
 ## 谁在用
 

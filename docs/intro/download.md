@@ -20,6 +20,11 @@ ZensUI/
     │  ├─ZensUI.pc.scss 
     │  └─_var.scss
     │
-    └─ js/ 
-        └─flexible.js   
+    ├─ wxss/
+    │  └─ZensUI.mp.wxss
+    │
+    ├─ js/ 
+    │   └─flexible.js
+    │   
+    └─ zens-ui.zip     
 ```

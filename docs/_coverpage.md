@@ -2,11 +2,11 @@
 
 # ZensUI <small>1.0.6</small>
 
-> A magical documentation site generator.
+> 轻松帮你搞定UI层.
 
-- Simple and lightweight (~21kB gzipped)
-- No statically built html files
-- Multiple themes
+- 跨平台支持——Mobile端、PC端、小程序端、Native端
+- 轻量级 (~8kB gzipped)
+- 无需打包构建，直接应用
 
 [GitHub](https://github.com/ZensFE/ZensUI/)
-[Getting Started](#what-is-zens-ui)
+[开始](#Zens-UI-是什么)

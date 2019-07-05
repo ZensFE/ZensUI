@@ -1,8 +1,9 @@
 /**
   基础变量
  */
-$is-wx: false !default;    //是否为微信小程序
-$is-pc: false !default;     //是否为PC端
+$is-wx: false !default;    // 是否为微信小程序
+$is-pc: false !default;     // 是否为PC端
+$is-weex: false !default;   // 是否为Weex
 
 /*
 *   颜色系统
@@ -62,18 +63,20 @@ $color-list: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $color-list: map-merge(
   (
+    'primary': $primary,
     'red': $red,
     'orange': $orange,
     'yellow': $yellow,
     'green': $green,
     'blue': $blue,
     'purple': $purple,
-    'primary': $primary,
-    'white': $white,
     'black': $black,
+    'dark': $dark,
+    'darker': map-get($gray-list, 'darker'),
     'gray': $gray,
     'light': $light,
-    'dark': $dark
+    'lighter': map-get($gray-list, 'lighter'),
+    'white': $white,
   ),
   $color-list
 );
@@ -94,18 +97,20 @@ $btn-size-list: map-merge(
   $btn-size-list
 );
 //按钮圆角
-$btn-radius-size: rpx(10);
+$btn-radius-size: rpx(10) !default;
 
 //布局相关
 $layout-number:          5 !default;
 $box-increase-gradient: 10 !default;
 $line-height-base:      20/14 !default;
 
-$container-padding: rpx(20);
+$container-padding: rpx(20) !default;
 //TODO 该值有待商榷
-$container-width: rpx(750);
+$container-width: rpx(750) !default;
 $border-radius-base:        rpx(8) !default;
 $border-color-default:      #eee !default;
+$border-width:              rpx(1) !default;
+$border-style:              solid !default;
 
 //font
 $font-weight-lighter:         lighter !default;

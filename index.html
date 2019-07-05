@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>ZensUI</title>
+  <link rel="icon" href="https://zens-pic.oss-cn-shenzhen.aliyuncs.com/static/space/zens-ui.log.svg">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  <link rel="stylesheet" href="//unpkg.com/zens-ui@1.0.8/dist/css/ZensUI.css">
+  <link rel="stylesheet" href="//zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/ZensUI.pc.css">
   <script src="//unpkg.com/vue/dist/vue.js"></script>
   <script src="//unpkg.com/docsify-demo-box-vue@1.1.0/dist/docsify-demo-box-vue.min.js"></script>
 </head>
@@ -13,14 +14,16 @@
 </body>
 <script>
   var jsResources = '<scr' + 'ipt src="//unpkg.com/vue/dist/vue.js"></scr' + 'ipt>'
-  var cssResources = '@import url("//unpkg.com/zens-ui@1.0.8/dist/css/ZensUI.mp.css");'
+  var cssResources = '@import url("//zens-pic.oss-cn-shenzhen.aliyuncs.com/static/staff/ZensUI.pc.css");'
   var bootCode = 'var globalVariable = "leon"'
   var globalVariable = "leon"
 
   window.$docsify = {
     alias: {
       '.*?/changelog': 'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG',
-      '/zh-cn/(.*)': '../docs_zh/$1'
+      '/zh-cn/(.*)': '../docs_zh/$1',
+      '/.*/_sidebar.md': '/_sidebar.md',
+      '/.*/_navbar.md': '/_navbar.md'
     },
     name: 'ZensUI',
     auto2top: true,

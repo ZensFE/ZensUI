@@ -1,11 +1,13 @@
-@function px($width) {
-  @return $width / 37.5 +rem;
-}
-
 //尺寸相关的全局封装
 @function rpx($size) {
   @if ($is-wx) {
     @return $size + rpx;
+  }
+  @else if($is-pc) {
+    @return $size + px;
+  }
+  @else if ($is-weex) {
+    @return $size + px;
   }
   @else {
     //TODO 暂时只用非响应式的px单位
@@ -95,6 +97,9 @@
 
 @function get-layout-size($i,$reverse:1) {
   @if ($is-pc) {
+    @return $i * $reverse * $box-increase-gradient +px;
+  }
+  @else if ($is-weex) {
     @return $i * $reverse * $box-increase-gradient +px;
   }
   @else if($is-wx) {
@@ -341,6 +346,9 @@
   outline-offset: -2px;
 }
 
+/*
+ 针对小程序端不支持*选择的调整
+ */
 @mixin uni-selector() {
   $is-wx: false !default;
   $weixin-elements: (view, swiper, icon, text, rich-text, progress, button, checkbox, form, input,

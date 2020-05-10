@@ -431,7 +431,7 @@
 
 .img-container{
   @extend .flex-container;
-  @extend .flex-container.center;
+  @extend .flex-container, .center;
 
   overflow: hidden;
 

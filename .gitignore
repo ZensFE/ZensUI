@@ -40,3 +40,5 @@ node_modules/
 .vscode
 /ui/dist
 /*.sqlite
+
+.gitignore

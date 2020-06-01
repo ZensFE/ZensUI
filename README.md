@@ -8,6 +8,8 @@
     <a href="https://travis-ci.com/ZensFE/ZensUI"><img src="https://api.travis-ci.com/ZensFE/ZensUI.svg?branch=master" alt="Travis CI"></a>
     <a href="https://www.npmjs.com/package/zens-ui"><img src="https://img.shields.io/npm/v/zens-ui.svg" alt="Version"></a>
     <a href="https://www.npmjs.com/package/zens-ui"><img src="https://img.shields.io/npm/l/zens-ui.svg" alt="License"></a>
+    <a href="https://github.com/ZensFE/ZensUI"><img src="https://badgen.net/github/last-commit/ZensFe/zensui" alt="LastCommit"></a>
+    <a href="https://github.com/ZensFE/ZensUI"><img src="https://badgen.net/github/stars/zensfe/zensui" alt="Stars"></a>
   </p>
 </p>
 
